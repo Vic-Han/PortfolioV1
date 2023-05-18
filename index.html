@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Victor Han
+        </title>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+          <div class = main_wrapper>
+            <div class = main_component>
+                <div class = main_view>
+                    <h2>
+                        Victor Han
+                    </h2>
+                    <h3>4th Year BSc in Computer Science at UofC</h3>
+                    <img src = "images/img2.png">
+                    <nav>
+                        <ul class = social_links>
+                            <li> <h4> victor.han72@gmail </h4> </li>
+                            <li> <a href = http://www.linkedin.com/in/victor-han-78a31b257 style="color: #0072b1;"> <i class="fa-brands fa-linkedin icon"></i> </a> </li>
+                            <li> <a href = http://github.com/Vic-Han style="color: #222222;"> <i class= "fa-brands fa-github icon"></i> </a> </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class = main_component>
+                <div class = toggler>
+                    <button class = toggle_about onclick = "toggleAbout()"> <h2 class = toggle_text>About Me</h2> </button>
+                    <button class = toggle_work onclick = "toggleWork()"> <h2 class = toggle_text>My Work</h2> </button>
+                    <button class = toggle_skills onclick = "toggleSkills()"> <h2 class = toggle_text>My Skills</h2> </button>
+                </div>
+            </div>
+                <div class = "main_component">
+                    <div class = empty> </div>
+                    <div class = "overview" id = toggle_display>
+                    </div>
+                    <div class = empty> </div>
+                </div>
+         </div>
+         <script src = "Portfolio.js"></script>
+    </body>
+    <footer>   
+
+    </footer>
+</html>
