@@ -52,12 +52,19 @@ function get_skills_html()
 {
     return `<section class = "About Me" id = "my_skills">
     <h2 class = "list_title"> An overview of my skills: </h2>
-    <h3 class = "skillset"> Leadership, Communication, Time Management, Problem Solving, Concurrency, Software Design & Architecture</h3>
+    <h3 class = "skillset"> Throughout the challenges of my post-secondary education,
+    I have embraced and leveraged the inherent pressures to cultivate a valuable array of transferable skills.
+    I am confident I can manage several deadlines effectively.
+    I understand that I must start early to prepare for the unexpected challenges that will arise.
+    Additionally, I can demonstrate the ability to work in a team and communicate effectively.
+    I often am the one setting tasks and internal deadlines at group meetings,
+    and I communicate outside allotted meeting times to ensure everyone, myself included,
+    understands what they need to do and how to do it. </h3>
     <h2 class = "list_title"> My programming languages: </h2>
     <h3 class = "skillset"> C++, Java, C#, Python, JavaScript, HTML, CSS </h3>
     <h2 class = "list_title"> FrameWorks, Databases, and Libraries: </h2>
     <h3 class = "skillset"> MySQL, React.js, Emscripten & Webassembly, Pytorch, Vaadin </h3>
-    <a href = #Resume.pdf> <h1 align = center> My Full Resume</h1></a>
+    <a href = Resume.pdf> <h1 align = center> My Full Resume</h1></a>
 </section>`
 }
 function toggleAbout()

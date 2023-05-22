@@ -1,6 +1,6 @@
 
 
-root{
+:root{
     --clr-light : #ffffff;
     --clr-dark : #151515;
     --clr-green: #7e2738d0;
@@ -22,7 +22,9 @@ root{
     }
 }
 
-
+.h1, h2, h3, h4{
+    font-weight: normal;
+}
 body{
     background-color: #d3d6d4;
     color: var(--clr-light);
@@ -69,6 +71,7 @@ h3{
     max-width: 40vw;
     align-items: center;
     background-color: #d3d6d4;
+    color: #151515;
 }
 .icon{
     font-size:5vh ;

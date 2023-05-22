@@ -29,18 +29,6 @@
 .horizontal_img_component{
     max-width: 49%;
 }
-.projects{
-    background-color: #151515;
-    color:#ffffff;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.project{
-    flex-basis: 45%;
-   
-}
 .img{
     max-width: 800px;
 }
