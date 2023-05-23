@@ -137,6 +137,8 @@ h3{
     width:100%
 }
 .project{
+    margin: 1vh;
+    background-size: cover;
     flex-basis: 45%;
     height : 70vh;
     width : 30vw;
@@ -180,11 +182,11 @@ h3{
     color: #05f140;
 }
 #UTTT{
-    background-image: url("images/img2.png");
+    background-image: url("images/UTTT.png");
     background-repeat: no-repeat;
 }
 #image_compressor{
-    background-image: url("images/img2.png");
+    background-image: url("images/image_compressor.png");
     background-repeat: no-repeat;
 }
 .a{

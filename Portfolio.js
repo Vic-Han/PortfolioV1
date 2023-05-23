@@ -14,14 +14,15 @@ function get_work_html()
         </a>
         <a href="tictactoe/UTTT.html">
             <div class = project id = UTTT>
-            <h4> Ulitimate Tic Tac Toe AI </h4>
+            <h1 style = "color: #000000;"> Ulitimate </h1>
+            <h1 style = "color: #000000;"> Tic Tac Toe AI </h1>
             </div>
         </a>
         
         <a href="Compressor/image_compressor.html">
         <div class = project id = image_compressor>
-            <h4> Image </h4>
-            <h4> Compressor </h4>
+            <h1 style = "color: #000000;"> Image </h1>
+            <h1 style = "color: #000000;"> Compressor </h1>
             </div>
         </a>
     </div>
@@ -52,18 +53,26 @@ function get_skills_html()
 {
     return `<section class = "About Me" id = "my_skills">
     <h2 class = "list_title"> An overview of my skills: </h2>
-    <h3 class = "skillset"> Throughout the challenges of my post-secondary education,
+    <h4 class = "skillset"> Throughout the challenges of my post-secondary education,
     I have embraced and leveraged the inherent pressures to cultivate a valuable array of transferable skills.
     I am confident I can manage several deadlines effectively.
     I understand that I must start early to prepare for the unexpected challenges that will arise.
     Additionally, I can demonstrate the ability to work in a team and communicate effectively.
     I often am the one setting tasks and internal deadlines at group meetings,
     and I communicate outside allotted meeting times to ensure everyone, myself included,
-    understands what they need to do and how to do it. </h3>
-    <h2 class = "list_title"> My programming languages: </h2>
-    <h3 class = "skillset"> C++, Java, C#, Python, JavaScript, HTML, CSS </h3>
-    <h2 class = "list_title"> FrameWorks, Databases, and Libraries: </h2>
-    <h3 class = "skillset"> MySQL, React.js, Emscripten & Webassembly, Pytorch, Vaadin </h3>
+    understands what they need to do and how to do it. </h4>
+    <h4 class = "skillset"> I possess a strong proficiency in Object-Oriented Programming languages, having worked with them extensively. 
+    Developing a Java-based web application and a complex C++ backend has enriched my knowledge of various concepts. 
+    I have an excellent grasp of data structures, methods, and attributes at a lower level. 
+    Furthermore, I have significantly enhanced my ability to trace low-level code. 
+    On a higher level, I have gained a better understanding of data flow, encapsulation, 
+    abstraction, as well as architectural and design patterns.
+    </h4>
+    <h4 class = "skillset"> Currently, I am enhancing my skill set in web development. 
+    This involves mastering fundamentals such as HTML, CSS, and JavaScript. 
+    Additionally, I possess knowledge of relational databases (RDBMS) and essential web-based protocols such as TCP, 
+    UDP, and IP. I am also learning React and MongoDB which I use to tackle my latest project idea.
+    </h4>
     <a href = Resume.pdf> <h1 align = center> My Full Resume</h1></a>
 </section>`
 }
