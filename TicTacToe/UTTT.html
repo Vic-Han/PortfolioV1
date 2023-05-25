@@ -8,12 +8,71 @@
         <link rel="stylesheet" href="UTTT.css">
     </head>
     <body>
-        <h1> Ulitimate Tic Tac Toe AI</h1>
-        <p>
+  
+
+        <div class = "main_container">
+            <div class = "empty_space">
+            </div>
             
-        </p>
+            <div class = "main_body">
+                <h1 align = center> Ulitimate Tic Tac Toe AI</h1>
+                
+                    <h3>
+                        This is a personal project I created using C++ and JavaScript. I compiled my C++ code to WebAssembly using 
+                        Emscripten and used the WASM module in my JavaScript code.
+                    </h3>
+                    <p>
+                        I wanted to explore more search algorithms that were not tree/graph based. 
+                        Normal Tic Tac Toe is easy enough to burte force with a basic minimax search, 
+                        but its more complex counterpart, Ulitimate Tic Tac Toe, is quite tricky. 
+                    </p>
+                    <img src = images/UTTT1.png>
+                    <p>
+                        Ultimate Tic Tac Toe is a game with a similar goal to the regular game. 
+                        To win, a player must conquer three of the sub boards to make a row column or diagnol.
+                        The sub boards themselves must be won by traditional tic tac toe rules.
+                        Players must play on the board corresponding to the last players mvoe on the sub board 
+                        i.e. if player X played on the top left square of any board, player O must play on the top left board. 
+                        If a player is sent to a board that is already controlled, they may play on any available board. 
+                    </p>
+                    <img src = images/UTTT2.png>
+                    <p>
+                        This is a perfect information, zero sum game, similar to chess. 
+                        A weak upper bound for the number of possible games is 81!, 
+                        as that would include every combination of filling in every square in every order. 
+                        This is much less complex than chess, but it is still not possible to brute force. 
+                        The problem with using the same Alpha-Beta pruning technique that top engines such as 
+                        Stockfish and Komodo use, is that Ultimate Tic Tac Toe does not have a simple heuristic. 
+                        It is hard to evaulate a position as "good" or "bad" through basic compuations.
+                    </p>
+                    <p>
+                        One idea would be to use reinforcement learning to train a model that evaluates a position. 
+                        This is not a trival however, as there is a fine balance required between depth and accuracy of the model. 
+                        Too deep and the model will have too many leaves to evaulate, forcing the architecture to prioritize speed over accuracy. 
+                        Not deep enough and the minimax will be vunerable to long, forcing variations, just like the old chess engines. 
+                         
+                    </p>
+                    <p>
+                        There is a much simpler solution though, random sampling! 
+                        A Monte Carlo Tree Search is an algorithm that only searches 1-2 ply deep, and evaluates a position based on random sampling. 
+                        From a given position, the engine can simluate thousands of games where the players choose moves randomly, 
+                        and then evaluate the position based on the results of all games. 
 
+                    </p>
+                    <img src = "images/MCTS.png" >
+                    <p>
+                        This works surprisingly well, my engine is easily able to crush me while only having to calculate for around 2 seconds 
+                        (on my machine, including all the overhead). Further improvements could be made to this engine. 
+                        The Monte Carlo algorithm is not too complex to thread, as searching 1-2 ply is not the CPU intesive operation. 
+                        Evaluating each leaf node is, but those evaluations can be parallelized. Including a full Alpha-Beta search is also a good idea, 
+                        the engine can determine when the game is finishing and switch when brute force becomes possible. 
+                    </p>
+                    <a href = "../index.html"><button class = back_button> Back </button></a>
+            </div>
+            <div class = "empty_space">
+            </div>
 
+        </div>
 
     </body>
 

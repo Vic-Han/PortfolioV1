@@ -14,10 +14,27 @@
     background-color: #66c3ff;
     max-width: 18%;
     flex-grow: 1;
-    min-height:3000px;
+    min-height: 2000px;
 }
 .main_body{
     flex-basis: 45%;
-    min-height:3000px;
+    min-height: 2000px;
     max-width: 60%;
+}
+img{
+    left: 5%;
+    right: 5%;
+    position: relative;
+    max-width: 90%;
+    height: auto;
+}
+.back_button{
+    border: 0;
+    left: 15%;
+    right: 15%;
+    width: 30%;
+    height: 10vh;
+    background-color: #66c3ff;
+    font-size: 1.75rem;
+    font-weight: bold;
 }

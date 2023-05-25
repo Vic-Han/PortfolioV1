@@ -1,8 +1,8 @@
 function get_work_html()
 {
-    return `<section class = "My Work" id= "my_projects">
-    <h2>
-       Some of my Projects:
+    return `<section class = "dynamic_contents" id= "my_projects">
+    <h2 class = "heading">
+       Click to see my projects:
     </h2>
     <div class = "projects">
         
@@ -30,7 +30,8 @@ function get_work_html()
 }
 function get_about_html()
 {
-    return` <section class = \"introduction\" id = \"about_me\">
+    return` <section class = "dynamic_contents" id = "about_me">
+    <h2 class = "heading"> A little bit about me: </h2>
     <h4 class = description>
         
         I first started programming in high school as an elective. 
@@ -44,15 +45,17 @@ function get_about_html()
     </h4>
     <h4 class = description>
         Outside of programming, I love endurance sports. 
-        They give me an opportunity to step outside my comfort zone and persevere through difficult situations.
+        They give me an opportunity to step outside my comfort zone and persevere through difficult situations. 
+        As a problem solver, I also enjoy chess. I used to play competitively when I was younger, 
+        and I still follow top level chess.  
 
     </h4>
     </section>`
 }
 function get_skills_html()
 {
-    return `<section class = "About Me" id = "my_skills">
-    <h2 class = "list_title"> An overview of my skills: </h2>
+    return `<section class = "dynamic_contents" id = "my_skills">
+    <h2 class = "heading"> An overview of my skills: </h2>
     <h4 class = "skillset"> Throughout the challenges of my post-secondary education,
     I have embraced and leveraged the inherent pressures to cultivate a valuable array of transferable skills.
     I am confident I can manage several deadlines effectively.

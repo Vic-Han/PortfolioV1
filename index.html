@@ -10,14 +10,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+
           <div class = main_wrapper>
             <div class = main_component>
                 <div class = main_view>
-                    <h2>
+                    <h1 align = "center" font-weight = "bold" color = "black">
                         Victor Han
-                    </h2>
-                    <h3>4th Year BSc in Computer Science at UofC</h3>
-                    <img src = "images/img2.png">
+                    </h1>
+                    <h2 align = "center">4th Year BSc in Computer Science at UofC</h2>
+                    <img src = "images/personal.jpg"  id = "my_picture">
                     <nav>
                         <ul class = social_links>
                             <li> <h4> victor.han72@gmail </h4> </li>
@@ -27,18 +28,18 @@
                     </nav>
                 </div>
             </div>
-            <div class = main_component>
+            <div class = main_component >
                 <div class = toggler>
-                    <button class = toggle_about onclick = "toggleAbout()"> <h2 class = toggle_text>About Me</h2> </button>
-                    <button class = toggle_work onclick = "toggleWork()"> <h2 class = toggle_text>My Work</h2> </button>
-                    <button class = toggle_skills onclick = "toggleSkills()"> <h2 class = toggle_text>My Skills</h2> </button>
+                    <button id = toggle_about onclick = "toggleAbout()" class = toggle_button><h2 class = toggle_text> About Me </h2></button>
+                    <button id = toggle_work onclick = "toggleWork()" class = toggle_button> <h2 class = toggle_text> My Work </h2></button>
+                    <button id = toggle_skills onclick = "toggleSkills()" class = toggle_button> <h2 class = toggle_text> My Skills </h2></button>
                 </div>
             </div>
-                <div class = "main_component">
-                    <div class = empty> </div>
+                <div class = "main_component" id = "right_view">
+                    <div class = "empty empty1"> </div>
                     <div class = "overview" id = toggle_display>
                     </div>
-                    <div class = empty> </div>
+                    <div class = "empty empty2"> </div>
                 </div>
          </div>
          <script src = "Portfolio.js"></script>

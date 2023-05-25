@@ -14,23 +14,12 @@
     background-color: #66c3ff;
     max-width: 18%;
     flex-grow: 1;
-    min-height: 2650px;
+    min-height:100vh;
 }
 .main_body{
     flex-basis: 45%;
-    min-height: 2650px;
+    min-height:100vh;
     max-width: 60%;
-}
-.horizontal_img_container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.horizontal_img_component{
-    max-width: 49%;
-}
-.img{
-    max-width: 800px;
 }
 .back_button{
     border: 0;
