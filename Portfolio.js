@@ -19,7 +19,7 @@ function get_work_html()
             </div>
         </a>
         
-        <a href="Compressor/image_compressor.html">
+        <a href="compressor/image_compressor.html">
         <div class = project id = image_compressor>
             <h1 style = "color: #000000;"> Image </h1>
             <h1 style = "color: #000000;"> Compressor </h1>
