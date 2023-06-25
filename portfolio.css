@@ -86,43 +86,30 @@ h4{
 }
 .toggler{
     
-    position: relative;
-}
-#toggle_about{
     position: fixed;
-    top: 5vh;
-   
+    display: flex;
+    flex-direction: column;
+    top: 20vh;
+    bottom: 20vh;;
 }
-#toggle_work{
-    position: fixed;
-    top :35vh;
-  
-    
-}
-#toggle_skills
-{
-    position: fixed;
-    bottom: 5vh;
-   
-}
+
 .toggle_button{
     height: 28vh;
     transition: 0.7s;
     left: 40vw;
-    width: 6vw;
+    width: 8vw;
     background-color: var(--clr-green);
     border: 0;
+    cursor: pointer;
+    margin-bottom: 3vh;
 }
 .toggle_button:hover .toggle_text{
     font-size: calc(1.2 * var(--fs-h2));
 }
 .toggle_text{
     font-size: var(--fs-h2);
-    writing-mode: vertical-rl;
     font-family: sans-serif;
     font-stretch: extra-expanded;
-    writing-mode: vertical-rl; /* Set the writing mode to vertical, right-to-left */
-    text-orientation: mixed; /* Set the text orientation to upright */
     color: var(--clr-light_grey);
     transition: font-size 0.8s;
 }
@@ -167,7 +154,7 @@ h4{
     background-size: cover;
     flex-basis: 45%;
     height : 70vh;
-    width : 30vw;
+    width : 33vw;
     text-align: center;
     display: grid; 
     place-items: center;
@@ -175,13 +162,14 @@ h4{
 
 
 .project_img{
-    max-width: 30vw;
+    max-width: 33vw;
     height: auto;
     display: block;
     margin-top: 10px;
 }
 .dynamic_contents{
    position: relative;
+   width: 35vw;
 }
 .heading{
     text-align: center;
@@ -200,7 +188,7 @@ h4{
     background-repeat: no-repeat;
 }
 #image_compressor{
-    background-image: url("images/image_compressor.png");
+    background-image: url("images/recipe_selector.png");
     background-repeat: no-repeat;
 }
 #my_picture{

@@ -1,9 +1,9 @@
 function get_work_html()
 {
     return `<section class = "dynamic_contents" id= "my_projects">
-    <h2 class = "heading">
+    <h1 class = "heading">
        Click to see my projects:
-    </h2>
+    </h1>
     <div class = "projects">
         
         <a href = "fitness_tracker/Fitness.html">
@@ -19,10 +19,10 @@ function get_work_html()
             </div>
         </a>
         
-        <a href="compressor/image_compressor.html">
+        <a href= "selector/recipe_selector.html">
         <div class = project id = image_compressor>
-            <h1 style = "color: #000000;"> Image </h1>
-            <h1 style = "color: #000000;"> Compressor </h1>
+            <h1 style = "color: #000000;"> Recipe </h1>
+            <h1 style = "color: #ffffff;"> Selector </h1>
             </div>
         </a>
     </div>
@@ -50,6 +50,7 @@ function get_about_html()
         and I still follow top level chess.  
 
     </h4>
+    <a href = Resume.pdf target = "_blank"> <h1 align = center> My Full Resume</h1></a>
     </section>`
 }
 function get_skills_html()
