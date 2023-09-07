@@ -12,7 +12,7 @@ function get_work_html()
                 <h1 style="color: #ffffff;"> Tracker </h1>
                 </div>
         </a>
-        <a href="TicTacToe/UTTT.html">
+        <a href="Ultimate-Tic-Tac-Toe-Engine/index.html">
             <div class = project id = UTTT>
             <h1 style = "color: #000000;"> Ulitimate </h1>
             <h1 style = "color: #000000;"> Tic Tac Toe AI </h1>
