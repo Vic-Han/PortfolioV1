@@ -1,50 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
-        <title>
-            Victor Han
-        </title>
-        <link rel="stylesheet" href="portfolio.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Victor Han </title>
+        <link rel ="stylesheet" href = "about.css">
+        <link rel ="stylesheet" href = "projects.css">
+        <link rel ="stylesheet" href = "resume.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src = "logic.js" defer></script>
     </head>
     <body>
-
-          <div class = main_wrapper>
-            <div class = main_component>
-                <div class = main_view>
-                    <h1 align = "center" font-weight = "bold" color = "black">
-                        Victor Han
-                    </h1>
-                    <h2 align = "center">4th Year BSc in Computer Science at UofC</h2>
-                    <img src = "images/personal.jpg"  id = "my_picture">
-                    <nav>
-                        <ul class = social_links>
-                            <li> <h4> victor.han72@gmail </h4> </li>
-                            <li> <a href = http://www.linkedin.com/in/victor-han-78a31b257 target = "_blank" style="color: #0072b1;"> <i class="fa-brands fa-linkedin icon"></i> </a> </li>
-                            <li> <a href = http://github.com/Vic-Han target = "_blank" style="color: #222222;"> <i class= "fa-brands fa-github icon"></i> </a> </li>
-                        </ul>
-                    </nav>
-                </div>
+       
+        <div class = "full-background">
+            
+            <div id = "navbar-toggle" onclick="navbarHamburgerToggle()"> 
+                <div class = "hamburger-line"></div>    
+                <div class = "hamburger-line"></div>    
+                <div class = "hamburger-line"></div>    
             </div>
-            <div class = main_component >
-                <div class = toggler>
-                    <button id = toggle_about onclick = "toggleAbout()" class = toggle_button><h2 class = toggle_text> About Me </h2></button>
-                    <button id = toggle_work onclick = "toggleWork()" class = toggle_button> <h2 class = toggle_text> My Work </h2></button>
-                    
-                </div>
+            <div id = navbar>
+                <div class = "navbar-btn" onclick="toggleAbout()"> About </div>
+                <div class = "navbar-btn" onclick="toggleProjects()"> Projects </div>
+                <div class = "navbar-btn" onclick="toggleResume()"> Resume </div>
             </div>
-                <div class = "main_component" id = "right_view">
-                    <div class = "empty empty1"> </div>
-                    <div class = "overview" id = toggle_display>
+            <div id = "navbar-dropdown"  class = "useless" onclick="navbarDropdownToggle()">
+                <div class = "triangle"></div>
+                <div class = "triangle"></div>
+                <div class = "triangle"></div>
+                <div class = "triangle"></div>
+                <div class = "triangle"></div>
+            </div>
+            
+            <div class = "content-container">
+                <div id = "title"> Victor Han </div>
+                <div id = "social-links">
+                    <a href = "https://github.com/Vic-Han" target = "_blank" class = "link github"> <i class= "fa-brands fa-github icon github"></i> </a>
+                    <a href = "https://www.linkedin.com/in/victor-han-vh45/" target = "_blank"class = "link linkedin"> <i class="fa-brands fa-linkedin icon linkedin"></i> </a>
+                    <a href = "mailto:victor.han72@gmail.com" target = "_blank" class = "link email"> <i class= "fa-solid fa-envelope icon gmail"></i>  </a>
+                </div>
+                <div id = "about-section"> 
+                    <div class = "main-summary">
+                        <img src = "images/personal.jpg" alt = "personal photo" class = "main-img">
+                        <div class = "main-desc"> Hello! My name is Victor and I'm enthusiastic when it comes to the brain twisting problems we encounter during programming. 
+                            I am currently completing my Computer Science degree at the University of Calgary and aspire to become a cloud/web developer. 
+                            In addition to my degree, I am in the process of earning an IBM Full Stack Developer certificate. 
+                        </div>
                     </div>
-                    <div class = "empty empty2"> </div>
-                </div>
-         </div>
-         <script src = "Portfolio.js"></script>
-    </body>
-    <footer>   
+                    <div class = "secondary-summary">
+                        <div class = "secondary-desc"> 
+                            Right now my primary focus is my Recipe-Selector project, where I am trying tp master React, Express, and MongoDB. 
+                            I also plan to become proficient in technologies such as Rust, Django, Flask, Docker, and Kubernetes. 
+                            To further my learning, I have several other projects and online courses lined up.
+                        </div>
+                        <img src = "images/personal2.jpg" alt = "personal photo" class = "secondary-img">
+                        
+                    </div>
+                    <div class = "more-text">
+                        More about me: 
+                    </div>
+                    <div class = "running-summary"> 
+                        <div class="img-wrapper">
+                            <img src = "images/running.jpg" alt = "personal photo" class = "desc-img">
+                            <div class = "img-desc"> 2022 Canmore Nordic Centre Half Marathon</div>
+                        </div>
+                        <div class = "desc-text">
+                            I'm obsessed with pushing myself as far as I can. It's my philosophy that our biggest limits are the ones we put on ourselves.
+                            Ultra running is my way of stepping as far outside of my comfort zone as possible.
+                            It's how I show myself that I truly am someone who won't give up, no matter what.
+                            I believe that being confident can change everything we do, and that we earn this confidence by overcoming our self doubts. 
+                            While all endurance sports are challenging and lead to moments of self-doubt, I believe running is the most brutal.
+                        </div>
+                    </div>
+                    <div class = "cycling-summary">
+                        <div class = "desc-text">
+                            I was inspired by a coworker to attempt a 100km bike ride. 
+                            At the time, it seemed impossible as my longest ride had only been 40km! 
+                            However, as I continued to train, I quickly realized how foolish my doubts were. 
+                            While 5-hour training sessions were too stressful on my body when running, cycling allowed me to do so every weekend. 
+                            I often set ambitious time goals, and I was forced to find another level of effort during these rides.
+                            I learned the power of being able to talk myself through a difficult situation, whether on the road or in real life.
 
-    </footer>
+                        </div>
+                        <div class="img-wrapper">
+                            <img src = "images/biking.jpg" alt = "personal photo" class = "desc-img">
+                            <div class = "img-desc"> 2023 Chinook Classic Gran Fondo (150km)</div>
+                        </div>
+                    </div>
+                    <div class = cooking-summary>
+                        <div class="img-wrapper">
+                            <img src = "images/cooking.jpg" alt = "personal photo" class = "desc-img">
+                            <div class = "img-desc"> Me garnishing my butter chicken with my friends </div>
+                        </div>
+                        <div class = "desc-text">
+                            I have to be honest, my love for cooking originated from my own disastrous meals. 
+                            I used to equate 'healthy' with 'unappetizing', and believed that consuming bland food was a necessary sacrifice for my fitness. 
+                            However, as I did more and more research into healthy meals, I discovered that most delicious dishes can be made from scratch with whole foods. 
+                            I'm far from a chef, but I take pride in my ability to whip up a nutritious recipe that not only tastes great but is also pratical to prepare. 
+                        </div>
+                    </div>
+                </div>
+                <div id = "resume-section">
+                    
+                        <div class = "resume-text"> Want my full resume? </div>
+                        <a href = "resume-draftv5.pdf" target = "_blank" class = "resume-link"> Click Here! </a>
+                   
+                    <div class= "education-section">
+                        <div class = "education-header"> Education: </div>
+                        <div class = "university-section"> University of Calgary: Bachelors of Science Computer Science 09/2020 - 05/2024 </div>
+                        <div class = "IBM-certificate-section"> IBM Full Stack Development Certificate 01/2024 - Present </div>
+                    </div>
+                    <div class = "skills-section">
+                        <div class="skill-header"> Skills: </div>
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Front-End: </div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> HTML5 </div>
+                                <div class = "skill"> CSS3 </div>
+                                <div class = "skill"> JavaScript </div>
+                                <div class = "skill"> React </div>
+                            </div>
+                        </div>
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Back-End: </div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> Express.js/Node.js </div>
+                                <div class = "skill"> Java </div>
+                                <div class = "skill"> Go </div>
+                                <div class = "skill"> PostgreSQL </div>
+                                <div class = "skill"> MySQL </div>
+                                <div class = "skill"> MongoDB </div>
+                                <div class = "skill"> CassandraDB </div>
+                                <div class = "skill"> C# </div>
+                            </div>
+                           
+                        </div>  
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Low Level Systems: </div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> C</div>
+                                <div class = "skill"> C++ </div>
+                            </div>
+                        </div>  
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Data Science: </div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> Python </div>
+                                <div class = "skill"> Pyspark </div>
+                                <div class = "skill"> TensorFlow </div>
+                                <div class = "skill"> Apache Spark </div>
+                                <div class = "skill"> Hadoop </div>
+                            </div>
+                        </div>  
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Other Technologies:</div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> Git/Github </div>
+                                <div class = "skill"> Web Assembly </div>
+                                <div class = "skill"> Bash </div>
+                            </div>
+                        </div>       
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Currently Learning: </div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> Rust</div>
+                                <div class = "skill"> Docker</div>
+                                <div class = "skill"> Kubernetes</div>
+                                <div class = "skill"> Django</div>
+                                <div class = "skill"> Flask</div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+                <div id = "project-section">
+
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,218 @@
+@import url('base.css');
+#about-section{
+    flex-direction: column;   
+}
+.main-summary{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 300px 800px;
+}
+.main-img,.secondary-img{
+    width: 300px;
+    border-radius: 15px;
+}
+.main-desc,.secondary-desc{
+    padding: 30px 30px;
+    font-size: 24px;
+    line-height: 2;
+}
+.secondary-summary{
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: 800px 300px;
+}
+
+.more-text{
+    border-top: solid 3px var(--smoky-black);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 36px;
+}
+.running-summary, .cooking-summary{
+    display: grid;
+    grid-template-columns: 200px 900px;
+    margin: 20px 0px;
+}
+.cycling-summary{
+    display: grid;
+    grid-template-columns: 900px 200px;
+    margin: 20px 0px;
+}
+.desc-img{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+.desc-text{
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+@media (max-width: 1600px) {
+    .main-summary{
+     
+        grid-template-columns: 275px 725px;
+    }
+    .secondary-summary{
+        grid-template-columns: 625px 275px;
+    }
+    .main-img,.secondary-img{
+        width: 275px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 25px 30px;
+        font-size: 22px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 200px 700px;
+    }
+    .cycling-summary{
+        grid-template-columns: 700px 200px;
+    }
+    .desc-text{
+        font-size: 20px;
+        padding: 15px;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 1400px) {
+    .main-summary{
+        grid-template-columns: 275px 525px;
+    }
+    .secondary-summary{
+        grid-template-columns: 525px 275px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 15px 25px;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 200px 500px;
+    }
+    .cycling-summary{
+        grid-template-columns: 500px 200px;
+    }
+    .desc-text{
+        font-size: 18px;
+        padding: 15px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 1200px) {
+    .main-summary{
+        grid-template-columns: 260px 490px;
+    }
+    .secondary-summary{
+        grid-template-columns: 490px 260px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 15px 25px;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .main-img,.secondary-img{
+        width: 260px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 190px 460px;
+    }
+    .cycling-summary{
+        grid-template-columns: 460px 190px;
+    }
+    .desc-img{
+        width: 190px;
+    }
+    .desc-text{
+        font-size: 18px;
+        padding: 10px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 1000px) {
+    .main-summary{
+        grid-template-columns: 250px 450px;
+    }
+    .secondary-summary{
+        grid-template-columns: 450px 250px;
+    }
+    .main-img,.secondary-img{
+        width: 250px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 15px 25px;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    .running-summary, .cooking-summary, .cycling-summary{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .cycling-summary :first-child{
+        order: 2;
+    }
+    .cycling-summary :nth-child(2){
+        order: 1;
+    }
+    .img-wrapper{
+        width: 200px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .desc-text{
+        font-size: 18px;
+        padding: 15px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 850px) {
+    .main-summary, .secondary-summary{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-img,.secondary-img{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .secondary-summary :first-child{
+        order: 2;
+    }
+    .secondary-desc :nth-child(2){
+        order: 1;
+    }
+
+}
+@media (max-width: 700px) {
+    .main-summary, .secondary-summary{
+        margin: 15px 0px;
+    }
+    .running-summary, .cooking-summary, .cycling-summary{
+        margin: 15px 0px;
+    }
+}
+@media (max-width: 550px) {
+  
+    .main-summary, .secondary-summary{
+        margin: 12px 0px;
+    }
+    .running-summary, .cooking-summary, .cycling-summary{
+        margin: 12px 0px;
+    }
+    
+}
+@media (max-width: 400px) {
+     
+    .main-summary, .secondary-summary{
+        margin: 10px 0px;
+    }
+    .running-summary, .cooking-summary, .cycling-summary{
+        margin: 10px 0px;
+    }
+}

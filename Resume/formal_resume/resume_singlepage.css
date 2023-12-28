@@ -1,0 +1,181 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper{
+    width: 755px;
+    height: 1010px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header{
+    border-bottom: 2px solid black;
+}
+.name-text{
+    font-size: 40px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.link-wrapper{
+    display: grid;
+    grid-template-columns: 95px 115px 215px 105px 245px;
+    width: 775px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link{
+    width: 100%;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 35px 210px;
+}
+.link.portfolio{
+    display: inline;
+}
+.logo-img{
+    width: 25px;
+    margin: 7px;
+}
+.logo-img.git{
+    width: 30px;
+    margin: 2px;
+}
+.link-text{
+    position: relative;
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+}
+.skill-section{
+    border-bottom: 2px solid black;
+    padding: 5px 20px;
+}
+.skill-header{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.skill-set{
+    padding: 3px 10px;
+    font-size: 14px;
+}
+.project-section{
+    border-bottom: 2px solid black;
+    padding: 5px 20px;
+}
+.project-header{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+.project{
+    padding: 2px 10px;
+}
+.project-title{
+    font-size: 16px;
+}
+.project-description-wrapper{
+    padding: 5px 25px;
+    margin: 0;
+}
+.project-description{
+    font-size: 14px;
+    padding: 0;
+}
+.education-section{
+    border-bottom: 2px solid black;
+    padding: 5px 20px;
+}
+.education-desc{
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.education-header{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-right: 75px;
+}
+.education-date{
+    font-size: 14px;
+    margin-left: 50px;
+}
+.course-header{
+    font-size: 18px;
+    font-weight: bold;
+}
+.course-list{
+    display: grid;
+    grid-template-columns: 300px 200px 200px;
+    margin: 0;
+    padding: 5px 15px;
+}
+.course{
+    font-size: 13px;
+    padding-bottom: 2px;
+}
+.work-experience-section{
+    border-bottom: 2px solid black;
+    padding: 2px 20px;
+}
+.work-experience-header{
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+.job-overview{
+    display: grid;
+    grid-template-columns: 280px 280px 200px;
+    padding: 2px 10px;
+}
+.job-desc{
+    font-size: 14px;
+}
+.job-company{
+    font-size: 15px;
+}
+.job-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+.job-date{
+    font-size: 14px;
+}
+.job-responsibility-wrapper{
+    margin: 0;
+    padding: 2px 15px;
+}
+.job-responsibility{
+    margin: 2px 15px;
+}
+.hobby-section{
+    padding: 2px 20px;
+}
+.hobby-title{
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.hobby-container{
+    display: flex;
+    padding: 5px 20px;
+    margin: 0;
+}
+.hobby{
+    margin-left: 25px;
+    font-size: 14px;
+}

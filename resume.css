@@ -1,0 +1,95 @@
+@import url('base.css');
+#resume-section{
+    flex-direction: column;
+}
+.resume-text{
+    font-size: 36px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.resume-link{
+    font-size: 30px;
+    color: var(--spring-green);
+    text-align: center;
+    position: relative;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.education-section{
+    padding: 0px;
+}
+.education-header{
+    font-size: 36px;
+    margin: 10px 0px;
+}
+.university-section{
+    font-size: 24px;
+    padding: 10px 20px;
+}
+.IBM-certificate-section{
+    font-size: 24px;
+    padding: 10px 20px;
+}
+.skill-section{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.skill-header{
+    font-size: 36px;   
+    color: var(--smoky-black);
+    margin: 30px 0px;
+}
+.skill-subsection{
+    margin: 10px 0px;
+}
+.skill-type{
+    font-size: 24px;
+    color: var(--medium-slate-blue);
+}
+.skill-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 100%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.skill{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: var(--smoky-black);
+    box-sizing: border-box;
+}
+.tech-logo{
+    width: 100px;
+}
+@media (max-width: 1600px) {
+    
+}
+@media (max-width: 1400px) {
+    
+}
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 1000px) {
+
+}
+@media (max-width: 850px) {
+    
+}
+@media (max-width: 700px) {
+   
+}
+@media (max-width: 550px) {
+   
+}
+@media (max-width: 400px) {
+   
+}

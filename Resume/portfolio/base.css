@@ -1,0 +1,320 @@
+:root{
+    --smoky-black: #14110F;
+    --spring-green: #04F06A;
+    --atomic-tangerine: #F79F79;
+    --medium-slate-blue: #8A4FFF;
+    --electric-blue: #65DEF1;
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    
+}
+*{
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.full-background{
+    width: 100%;
+    min-height: 100vh;
+}
+.content-container{
+    width: 1100px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    color: var(--smoky-black);
+    
+}
+#navbar-toggle{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    width: 110px;
+    height: 80px;
+    padding: 10px 25px;
+    margin: 0px 10px;
+    cursor: pointer;
+    border-radius: 5%;
+    
+}
+.hamburger-line{
+    width: 90px;
+    aspect-ratio: 10/1;
+    border-radius: 40%;
+    background-color: var(--smoky-black);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px 0px;
+}
+#navbar-dropdown{
+    position: fixed;
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+
+}
+
+
+.triangle {
+    border-left: 15px solid transparent; 
+    border-right: 15px solid transparent;
+    border-top: 30px solid var(--atomic-tangerine);
+}
+#navbar{
+    position: fixed;
+    z-index: 2000;
+    left: 0%;
+    top: 100px;
+    width: 180px;
+    height: 400px;
+    padding: 10px 20px;
+    display: none;
+    flex-direction: column;
+    background-color: var(--atomic-tangerine);
+    box-sizing: border-box;
+}
+.navbar-btn{
+    text-align: center;
+    font-size: 32px;
+    margin: 35px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--medium-slate-blue);
+    color: var(--spring-green);
+    cursor: pointer;
+}
+
+.slide-in{
+    animation: slideInLeft 1s forwards;
+}
+.slide-out{
+    animation: slideOutLeft 1s forwards;
+}
+.drop-down{
+    animation: dropdown 1s forwards;
+}
+.drop-up{
+    animation: dropup 1s forwards;
+}
+.spinning-up > .triangle{
+    animation: rotatedown 0.3s forwards;
+}
+.spinning-down > .triangle{
+    animation: rotateup 0.3s forwards;
+}
+#title{
+    padding: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 48px;
+}
+#social-links{
+    display: flex;
+    justify-content: center;
+}
+.link{
+    width: 100px;
+}
+.icon{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 50px;
+}
+.github.icon{
+    color: #222222;
+}
+.linkedin.icon{
+    color: #0072b1;
+}
+@keyframes slideOutLeft {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+}
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+}
+@keyframes slideInTop {
+    from {transform: translateY(-100%) translateX(-50%); left: 50%;}
+    to {transform: translateY(0%) translateX(-50%); left: 50%;}
+}
+@keyframes slideOutTop {
+    from {transform: translateY(0%) translateX(-50%); left: 50%; }
+    to {transform: translateY(-100%) translateX(-50%); left: 50%;}
+}
+@keyframes dropdown {
+    from {transform: translateY(0px) translateX(-50%); left: 50%; }
+    to {transform: translateY(100px) translateX(-50%); left: 50%;}
+}
+@keyframes dropup{
+    from {transform: translateY(100px) translateX(-50%); left: 50%; }
+    to {transform: translateY(0px) translateX(-50%); left: 50%;}
+}
+@keyframes rotateup {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(0deg);}
+}
+@keyframes rotatedown {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(180deg);}
+}
+@media (max-width: 1600px) {
+    .content-container{
+        width: 1000px;
+    }   
+}
+@media (max-width: 1400px) {
+    .content-container{
+        width: 800px;
+    }
+}
+@media (max-width: 1200px) {
+    .content-container{
+        padding-top: 130px;
+        margin: 0;
+        width: 750px;
+    }
+    #navbar-toggle{
+        display: none;
+    }
+    #navbar-dropdown{
+        display: flex;
+        justify-content: space-between;
+        top: 0px;
+        width: 710px;
+        height: 30px;
+        padding: 2px 20px;
+        background-color: var(--electric-blue);
+        z-index: 9999;
+    }
+    #navbar{
+        top: 0px;
+        left: 50%;
+        width: 750px;
+        height: 100px;
+        transform: translateX(-50%);
+        flex-direction: row;
+    }
+    .navbar-btn{
+        font-size: 30px;
+        margin: 5px 65px;
+        padding: 10px;
+    }
+    .slide-in{
+        animation: slideInTop 1s forwards;
+    }
+    .slide-out{
+        animation: slideOutTop 1s forwards;
+    }
+}
+@media (max-width: 1000px) {
+    .content-container{
+        width: 700px;
+    }
+    #navbar-dropdown{
+        width: 660px;
+        padding: 2px 20px;
+    }
+    #navbar{
+        width: 700px;
+        height: 100px;
+    }
+    .navbar-btn{
+        font-size: 30px;
+        margin: 5px 55px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 850px) {
+    .content-container{
+        width: 655px;
+    }
+    #navbar-dropdown{
+        width: 619px;
+        padding: 2px 18px;
+    }
+    #navbar-dropdown :first-child{
+        display: none;
+    }
+    #navbar{
+        width: 655px;
+        height: 100px;
+    }
+    .navbar-btn{
+        font-size: 25px;
+        margin: 5px 55px;
+        padding: 10px;
+    }
+}
+@media (max-width: 700px) {
+    .content-container{
+        width: 500px;
+    }
+    #navbar-dropdown{
+        width: 470px;
+        padding: 2px 15px;
+    }
+    
+    #navbar{
+        width: 500px;
+        height: 100px;
+    }
+    .navbar-btn{
+        font-size: 22px;
+        margin: 5px 33px;
+        padding: 12px;
+    }
+}
+@media (max-width: 550px) {
+    .content-container{
+        width: 380px;
+    }
+    #navbar-dropdown{
+        width: 352px;
+        padding: 2px 14px;
+    }
+    #navbar-dropdown :last-child{
+        display: none;
+    }
+    #navbar{
+        width: 380px;
+        height: 100px;
+    }
+    .navbar-btn{
+        font-size: 20px;
+        margin: 5px 18px;
+        padding: 10px;
+    }
+}
+@media (max-width: 400px) {
+    .content-container{
+        width: 300px;
+    }
+    #navbar-dropdown{
+        width: 276px;
+        padding: 2px 12px;
+    }
+    
+    #navbar{
+        width: 300px;
+        height: 100px;
+    
+    }
+    .navbar-btn{
+        font-size: 18px;
+        margin: 5px 7px;
+        padding: 10px;
+    }
+}
