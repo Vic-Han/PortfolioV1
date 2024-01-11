@@ -19,6 +19,7 @@ a{
 .full-background{
     width: 100%;
     min-height: 100vh;
+    background-color: #fff4f0;
 }
 .content-container{
     width: 1100px;
@@ -65,7 +66,8 @@ a{
 .triangle {
     border-left: 15px solid transparent; 
     border-right: 15px solid transparent;
-    border-top: 30px solid var(--atomic-tangerine);
+    /* border-top: 30px solid var(--atomic-tangerine); */
+    border-top: 30px solid #202a44;
 }
 #navbar{
     position: fixed;
@@ -77,7 +79,8 @@ a{
     padding: 10px 20px;
     display: none;
     flex-direction: column;
-    background-color: var(--atomic-tangerine);
+    /*background-color: var(--atomic-tangerine);*/
+    background-color: #202a44;
     box-sizing: border-box;
 }
 .navbar-btn{
@@ -86,8 +89,10 @@ a{
     margin: 35px 0px;
     padding: 10px;
     border-radius: 5px;
-    background-color: var(--medium-slate-blue);
-    color: var(--spring-green);
+    /*background-color: var(--medium-slate-blue);*/
+    background-color: #04F06A;
+    /*color: var(--spring-green);*/
+    color: #202a44;
     cursor: pointer;
 }
 
@@ -190,12 +195,12 @@ a{
     }
     #navbar-dropdown{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         top: 0px;
         width: 710px;
         height: 30px;
         padding: 2px 20px;
-        background-color: var(--electric-blue);
+        background-color: var(--spring-green);
         z-index: 9999;
     }
     #navbar{
@@ -245,9 +250,9 @@ a{
         width: 619px;
         padding: 2px 18px;
     }
-    #navbar-dropdown :first-child{
+    /* #navbar-dropdown :first-child{
         display: none;
-    }
+    } */
     #navbar{
         width: 655px;
         height: 100px;
@@ -285,9 +290,9 @@ a{
         width: 352px;
         padding: 2px 14px;
     }
-    #navbar-dropdown :last-child{
+    /* #navbar-dropdown :last-child{
         display: none;
-    }
+    } */
     #navbar{
         width: 380px;
         height: 100px;

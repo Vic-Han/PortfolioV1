@@ -12,7 +12,7 @@
 }
 .resume-link{
     font-size: 30px;
-    color: var(--spring-green);
+    color: #202a44;
     text-align: center;
     position: relative;
     width: 300px;
@@ -49,7 +49,7 @@
 }
 .skill-type{
     font-size: 24px;
-    color: var(--medium-slate-blue);
+    color: #202a44;
 }
 .skill-grid{
     display: flex;

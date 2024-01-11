@@ -112,4 +112,3 @@ function toggleProjects(){
     projects.style.display = "flex"
     resume.style.display = "none"
 }
-console.log(navbarDropdown.style.cursor)

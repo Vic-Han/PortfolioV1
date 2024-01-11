@@ -108,8 +108,6 @@ function try_move(moveNum) {
 	{
 		document.getElementById("output").textContent = " Thinking....";
 		play_move(moveNum, 'X');
-		//console.log([...Array.from(gameInfo)])
-		//console.log([...Array.from(moveList)])
 		removeButtons();
 		
 		console.log(winStatus)

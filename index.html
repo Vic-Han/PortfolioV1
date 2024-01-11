@@ -26,12 +26,12 @@
                 <div class = "navbar-btn" onclick="toggleProjects()"> Projects </div>
                 <div class = "navbar-btn" onclick="toggleResume()"> Resume </div>
             </div>
-            <div id = "navbar-dropdown"  class = "useless" onclick="navbarDropdownToggle()">
+            <div id = "navbar-dropdown" onclick="navbarDropdownToggle()">
+                <div class = "triangle"></div>
+                <!-- <div class = "triangle"></div>
                 <div class = "triangle"></div>
                 <div class = "triangle"></div>
-                <div class = "triangle"></div>
-                <div class = "triangle"></div>
-                <div class = "triangle"></div>
+                <div class = "triangle"></div> -->
             </div>
             
             <div class = "content-container">
@@ -51,7 +51,7 @@
                     </div>
                     <div class = "secondary-summary">
                         <div class = "secondary-desc"> 
-                            Right now my primary focus is my Recipe-Selector project, where I am trying tp master React, Express, and MongoDB. 
+                            Right now my primary focus is my Recipe-Selector project, where I am trying to master React, Express, and MongoDB. 
                             I also plan to become proficient in technologies such as Rust, Django, Flask, Docker, and Kubernetes. 
                             To further my learning, I have several other projects and online courses lined up.
                         </div>
@@ -105,7 +105,7 @@
                 <div id = "resume-section">
                     
                         <div class = "resume-text"> Want my full resume? </div>
-                        <a href = "resume-draftv5.pdf" target = "_blank" class = "resume-link"> Click Here! </a>
+                        <a href = "resume-draftv5.pdf" target = "_blank" class = "resume-link"> Grab a copy! </a>
                    
                     <div class= "education-section">
                         <div class = "education-header"> Education: </div>
@@ -114,6 +114,16 @@
                     </div>
                     <div class = "skills-section">
                         <div class="skill-header"> Skills: </div>
+                        <div class="skill-subsection">
+                            <div class = "skill-type"> Interpersonal: </div>
+                            <div class = "skill-grid"> 
+                                <div class = "skill"> Highly Driven </div>
+                                <div class = "skill"> Leadership </div>
+                                <div class = "skill"> Communication </div>
+                                <div class = "skill"> Time management </div>
+                                
+                            </div>
+                        </div>
                         <div class="skill-subsection">
                             <div class = "skill-type"> Front-End: </div>
                             <div class = "skill-grid"> 
@@ -175,7 +185,63 @@
                     </div>
                 </div>
                 <div id = "project-section">
+                    <div class = "project-header"> My Projects: </div>
+                    <div class = "project"> 
+                        <div class = "project-title"> Texas Holdem Pass and Play</div>
+                        <img class = "project-img" src="images/Poker.png">
 
+                        <div class = "project-link-container">
+                            <a class = "project-link" href = "https://github.com/Vic-Han/PassnPlayPoker"> Github </a>
+                            <a class = "project-link" href = "https://vic-han.github.io/PassnPlayPoker/index.html" target="_blank"> Open </a>
+                        </div>
+                        <div class = "project-desc"> This was a mockup I made of Texas Holdem in vanilla HTML, CSS, and JavaScript. </div>
+                    </div>
+                    <div class = "project"> 
+                        <div class = "project-title"> Ultimate Tic Tac Toe Engine</div>
+                        <img class = "project-img" src = "images/UTTT.png">
+                        
+                        <div class = "project-link-container">
+                            <a class = "project-link" href=""> Github </a>    
+                            <a class = "project-link" href="https://vic-han.github.io/Ultimate-Tic-Tac-Toe-Engine/index.html" target="_blank"> Open </a>
+                        </div>
+                        <div class = "project-desc"> </div>
+                    </div>
+                    <div class = "project"> 
+                        <div class = "project-title"> SpaceBook</div>
+                        <img class = "project-img" >
+                        
+                        <div class = "project-link-container">
+                            <a class = "project-link" href="https://github.com/EugeneL11/SpaceBook"> Github </a>    
+                            <a class = "project-link" href="https://vic-han.github.io/Ultimate-Tic-Tac-Toe-Engine/index.html" target="_blank"> Video </a>
+                        </div>
+                        <div class = "project-desc"> 
+                            SpaceBook started off as just a "facebook" pun in my head, but when I mentioned it to my group they were immediately on board. 
+                            Seeing as none of my other group members had experience or confidence in full stack software design, I took charge of building the majority of the architecture for the software. 
+                            I ended up learning a lot from my mistakes in both designing the database, choosing information flow, and client side caching. 
+                            I gained a lot of experience with project management when it comes to full stack applications.
+                        </div>
+                    </div>
+                    <div class = "project"> 
+                        <div class = "project-title"> Recipe-Selector</div>
+                        <img class = "project-img" src = "images/RecipeSelector.png">
+                        
+                        <div class = "project-link-container">
+                            <a class = "project-link" href="https://github.com/Vic-Han/Recipe-Selector"> Github </a>    
+                            <a class = "project-link" href= "https://vic-han.github.io/Ultimate-Tic-Tac-Toe-Engine/index.html" target="_blank"> Video </a>
+                        </div>
+                        <div class = "project-desc"> </div>
+                    </div>
+                    <div class = "project"> 
+                        <div class = "project-title"> Fitness Tracker</div>
+                        <img class = "project-img">
+                        
+                        
+                        <div class = "project-link-container">
+                            <a class = "project-link" href=""> Github </a>    
+                            <a class = "project-link" href="https://vic-han.github.io/Ultimate-Tic-Tac-Toe-Engine/index.html" target="_blank"> Video </a>
+                        </div>
+                        <div class = "project-desc"> </div>
+                    </div>
                 </div>
             </div>
         </div>
