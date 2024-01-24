@@ -3,7 +3,7 @@
     flex-direction: column;   
 }
 .main-summary{
-    margin: 20px 0px;
+    margin: 15px 0px;
     display: grid;
     grid-template-columns: 300px 800px;
 }
@@ -12,12 +12,12 @@
     border-radius: 15px;
 }
 .main-desc,.secondary-desc{
-    padding: 30px 30px;
+    padding: 20px 30px;
     font-size: 24px;
     line-height: 2;
 }
 .secondary-summary{
-    margin: 20px 0px;
+    margin: 15px 0px;
     display: grid;
     grid-template-columns: 800px 300px;
 }
