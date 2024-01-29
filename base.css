@@ -22,7 +22,7 @@ a{
     background-color: #fff4f0;
 }
 .content-container{
-    width: 1100px;
+    width: 3000px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -174,6 +174,41 @@ a{
 @keyframes rotatedown {
     from {transform: rotate(0deg);}
     to {transform: rotate(180deg);}
+}
+@media (max-width: 4000px) {
+    .content-container{
+        width: 2400px;
+    
+    }
+}
+@media (max-width: 3500px) {
+    .content-container{
+        width: 2200px;
+    
+    }
+}
+@media (max-width: 3000px) {
+    .content-container{
+        width: 1900px;
+    
+    }
+}
+@media (max-width: 2600px) {
+    .content-container{
+        width: 1700px;
+    
+    }
+}
+@media (max-width: 2200px) {
+    .content-container{
+        width: 1450px;
+    }
+}
+
+@media (max-width: 1900px) {
+    .content-container{
+        width: 1300px;
+    }
 }
 @media (max-width: 1600px) {
     .content-container{
