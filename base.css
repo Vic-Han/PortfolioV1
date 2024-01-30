@@ -30,37 +30,6 @@ a{
     color: var(--smoky-black);
     
 }
-#navbar-toggle{
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    width: 110px;
-    height: 80px;
-    padding: 10px 25px;
-    margin: 0px 10px;
-    cursor: pointer;
-    border-radius: 5%;
-    
-}
-.hamburger-line{
-    width: 90px;
-    aspect-ratio: 10/1;
-    border-radius: 40%;
-    background-color: var(--smoky-black);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px 0px;
-}
-#navbar-dropdown{
-    position: fixed;
-    display: none;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-
-}
 
 
 .triangle {
@@ -77,11 +46,14 @@ a{
     width: 180px;
     height: 400px;
     padding: 10px 20px;
-    display: none;
+    display: flex;
     flex-direction: column;
     /*background-color: var(--atomic-tangerine);*/
     background-color: #202a44;
     box-sizing: border-box;
+}
+#navbar.invisble{
+    display: none;
 }
 .navbar-btn{
     text-align: center;
@@ -95,12 +67,22 @@ a{
     color: #202a44;
     cursor: pointer;
 }
-
+#navbar-dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 100px;
+    width: 30px;
+    height: 400px;
+    padding: 20px 2px;
+    background-color: var(--spring-green);
+    z-index: 9999;
+}
 .slide-in{
-    animation: slideInLeft 1s forwards;
+    animation: slideIn forwards;
 }
 .slide-out{
-    animation: slideOutLeft 1s forwards;
+    animation: slideOut 1s forwards;
 }
 .drop-down{
     animation: dropdown 1s forwards;
@@ -113,6 +95,9 @@ a{
 }
 .spinning-down > .triangle{
     animation: rotateup 0.3s forwards;
+}
+#navbar-dropdown.navbar-visible{
+    
 }
 #title{
     padding: 20px;
@@ -143,22 +128,15 @@ a{
 .linkedin.icon{
     color: #0072b1;
 }
-@keyframes slideOutLeft {
+@keyframes slideOut {
     from { transform: translateX(0%); }
     to { transform: translateX(-100%); }
 }
-@keyframes slideInLeft {
+@keyframes slideIn {
     from { transform: translateX(-100%); }
     to { transform: translateX(0%); }
 }
-@keyframes slideInTop {
-    from {transform: translateY(-100%) translateX(-50%); left: 50%;}
-    to {transform: translateY(0%) translateX(-50%); left: 50%;}
-}
-@keyframes slideOutTop {
-    from {transform: translateY(0%) translateX(-50%); left: 50%; }
-    to {transform: translateY(-100%) translateX(-50%); left: 50%;}
-}
+
 @keyframes dropdown {
     from {transform: translateY(0px) translateX(-50%); left: 50%; }
     to {transform: translateY(100px) translateX(-50%); left: 50%;}
@@ -167,6 +145,7 @@ a{
     from {transform: translateY(100px) translateX(-50%); left: 50%; }
     to {transform: translateY(0px) translateX(-50%); left: 50%;}
 }
+
 @keyframes rotateup {
     from {transform: rotate(180deg);}
     to {transform: rotate(0deg);}
@@ -196,6 +175,7 @@ a{
     }
     #navbar-dropdown{
         display: flex;
+        flex-direction: row;
         justify-content: center;
         top: 0px;
         width: 710px;
@@ -217,11 +197,13 @@ a{
         margin: 5px 65px;
         padding: 10px;
     }
-    .slide-in{
-        animation: slideInTop 1s forwards;
+    @keyframes slideIn {
+        from {transform: translateY(-100%) translateX(-50%); left: 50%;}
+        to {transform: translateY(0%) translateX(-50%); left: 50%;}
     }
-    .slide-out{
-        animation: slideOutTop 1s forwards;
+    @keyframes slideOut {
+        from {transform: translateY(0%) translateX(-50%); left: 50%; }
+        to {transform: translateY(-100%) translateX(-50%); left: 50%;}
     }
 }
 @media (max-width: 1000px) {

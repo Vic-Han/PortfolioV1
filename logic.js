@@ -5,92 +5,53 @@ const projects =  document.getElementById("project-section")
 const resume =  document.getElementById("resume-section")
 const navbarDropdown = document.getElementById("navbar-dropdown")
 
-about.style.display = "flex"
+
 projects.style.display = "none"
 resume.style.display = "none"
+navBar.classList.add('invisible')
+
 
 let navbarVisible = false
 let navbarToggleActive = true
-function navbarHamburgerToggle(){
+
+function toggleNavbar(){
     if(navbarToggleActive === false){
         return
     }
     navbarToggleActive = false
-    if(navbarVisible === false){
-        navbarVisible = true
-        navBar.style.display = 'flex'
-        navBar.classList.add('slide-in')
-        navbarDropdown.style.transform = "translateY(100px) translateX(-50%)"
-        navbarDropdown.querySelectorAll(".triangle").forEach(t => {
-            t.style.transform = "rotate(180deg)"
-        })
-        setTimeout(() =>{
-            navBar.classList.remove('slide-in')
-            setTimeout(() =>{
-                navbarToggleActive = true
-            }, 200)
-        }, 1000)
-    }
-    else if(navbarVisible === true){
-        navbarVisible = false
-        navBar.classList.add('slide-out')
-        navbarDropdown.style.transform = "translateY(0px) translateX(-50%)"
-        navbarDropdown.querySelectorAll(".triangle").forEach(triangle => {
-            triangle.style.transform = "rotate(0deg)"
-        })
-        setTimeout(() =>{
-            navBar.classList.remove('slide-out')
-            navBar.style.display = "none"
-            setTimeout(() =>{
-                navbarToggleActive = true
-            }, 200)
-        }, 1000)
-    }
-}
-
-
-function navbarDropdownToggle(){
-    if(navbarToggleActive === false){
-        return
-    }
-    navbarToggleActive = false
-    if(navbarVisible === false){
-        navbarVisible = true
-        navBar.style.display = 'flex'
-        navBar.classList.add('slide-in')
-        navbarDropdown.classList.add('drop-down')
-        setTimeout(() =>{
-            navBar.classList.remove('slide-in')
-            navbarDropdown.classList.remove('drop-down')
-            navbarDropdown.style.transform = "translateY(100px) translateX(-50%)"
-            navbarDropdown.classList.add("spinning-up")
-            setTimeout(() =>{
-                navbarDropdown.classList.remove("spinning-up")
-                navbarDropdown.querySelectorAll(".triangle").forEach(t => {
-                    t.style.transform = "rotate(180deg)"
-                })
-            }, 300)
-            setTimeout(() =>{
-                navbarToggleActive = true
-            }, 350)
-        }, 1000)
-    }
-    else if(navbarVisible === true){
+    if(navbarVisible === true){
         navbarVisible = false
         navBar.classList.add('slide-out')
         navbarDropdown.classList.add('drop-up')
         setTimeout(() =>{
             navBar.classList.remove('slide-out')
             navbarDropdown.classList.remove('drop-up')
-            navbarDropdown.style.transform = "translateY(0px) translateX(-50%)"
-            navbarDropdown.classList.add("spinning-down")
+            navbarDropdown.classList.remove('navbar-visible')
+            navbarDropdown.classList.add("spinning-out")
             setTimeout(() =>{
-                navbarDropdown.classList.remove("spinning-down")
-                navbarDropdown.querySelectorAll(".triangle").forEach(triangle => {
-                    triangle.style.transform = "rotate(0deg)"
-                })
+                navbarDropdown.classList.remove("spinning-out")
+                navbarDropdown.classList.remove("pointing-in")
             }, 300)
-            navBar.style.display = "none"
+            navBar.classList.add('invisible')
+            setTimeout(() =>{
+                navbarToggleActive = true
+            }, 350)
+        }, 1000)
+    }
+    else if (navbarVisible === false){
+        navbarVisible = true
+        navBar.classList.remove('invisible')
+        navBar.classList.add('slide-in')
+        navbarDropdown.classList.add('drop-down')
+        setTimeout(() =>{
+            navBar.classList.remove('slide-in')
+            navbarDropdown.classList.remove('drop-down')
+            navbarDropdown.classList.add("navbar-visible")
+            navbarDropdown.classList.add("spinning-in")
+            setTimeout(() =>{
+                navbarDropdown.classList.remove("spinning-in")
+                navbarDropdown.classList.add("pointing-in")
+            }, 300)
             setTimeout(() =>{
                 navbarToggleActive = true
             }, 350)
@@ -98,17 +59,17 @@ function navbarDropdownToggle(){
     }
 }
 function toggleAbout(){
-    about.style.display = "flex"
-    projects.style.display = "none"
-    resume.style.display = "none"
+    about.classList.remove('invisible')
+    projects.classList.add('invisible')
+    resume.classList.add('invisible')
 }
 function toggleResume(){
-    about.style.display = "none"
-    projects.style.display = "none"
-    resume.style.display = "flex"
+    about.classList.add('invisible')
+    projects.classList.add('invisible')
+    resume.classList.remove('invisible')
 }
 function toggleProjects(){
-    about.style.display = "none"
-    projects.style.display = "flex"
-    resume.style.display = "none"
+    about.classList.add('invisible')
+    projects.classList.remove('invisible')
+    resume.classList.add('invisible')
 }
