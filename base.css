@@ -320,6 +320,7 @@ a{
 @media (max-width: 700px) {
     .content-container{
         width: 500px;
+        padding-top: 120px;
     }
     #navbar-dropdown{
         width: 470px;
@@ -349,6 +350,7 @@ a{
 @media (max-width: 550px) {
     .content-container{
         width: 380px;
+        padding-top: 115px;
     }
     #navbar-dropdown{
         width: 352px;
@@ -388,6 +390,7 @@ a{
 @media (max-width: 400px) {
     .content-container{
         width: 300px;
+        padding-top: 105px;
     }
     #navbar-dropdown{
         width: 276px;
