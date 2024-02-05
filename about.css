@@ -1,6 +1,10 @@
 @import url('base.css');
 #about-section{
+    display: flex;
     flex-direction: column;   
+}
+#about-section.invisible{
+    display: none;
 }
 .main-summary{
     margin: 15px 0px;

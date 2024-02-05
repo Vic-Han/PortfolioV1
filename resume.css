@@ -1,6 +1,10 @@
 @import url('base.css');
 #resume-section{
+    display: flex;
     flex-direction: column;
+}
+#resume-section.invisible{
+    display: none;
 }
 .resume-text{
     margin: 10px 0px;
