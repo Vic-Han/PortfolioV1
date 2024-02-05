@@ -6,8 +6,8 @@ const resume =  document.getElementById("resume-section")
 const navbarDropdown = document.getElementById("navbar-dropdown")
 
 
-projects.style.display = "none"
-resume.style.display = "none"
+projects.classList.add('invisible')
+resume.classList.add('invisible')
 navBar.classList.add('invisible')
 
 
@@ -31,7 +31,7 @@ function toggleNavbar(){
             setTimeout(() =>{
                 navbarDropdown.classList.remove("spinning-out")
                 navbarDropdown.classList.remove("pointing-in")
-            }, 300)
+            }, 310)
             navBar.classList.add('invisible')
             setTimeout(() =>{
                 navbarToggleActive = true
@@ -51,7 +51,7 @@ function toggleNavbar(){
             setTimeout(() =>{
                 navbarDropdown.classList.remove("spinning-in")
                 navbarDropdown.classList.add("pointing-in")
-            }, 300)
+            }, 310)
             setTimeout(() =>{
                 navbarToggleActive = true
             }, 350)
