@@ -70,13 +70,36 @@
 }
 
 .skill{
-    padding: 12px;
+    text-align: center;
+    display: block;
+    padding: 16px;
     margin: 10px 10px;
     font-size: 20px;
-    border: 2px solid black;
+    background-color: #fff;
     border-radius: 30px;
     color: var(--smoky-black);
     box-sizing: border-box;
+    line-height: 2;
+}
+.skill::after{
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    color: --var(--smoky-black);
+    position: relative;
+}
+.skill.beginner::after{
+    content: 'Beginner';
+}
+.skill.intermediate::after{
+    content: 'Intermediate';
+}
+.skill.advanced::after{
+    content: 'Advanced';
+
+}
+.skill.expert::after{
+    content: 'Expert';
 }
 .tech-logo{
     width: 100px;
