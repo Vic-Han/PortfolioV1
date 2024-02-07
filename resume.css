@@ -17,6 +17,7 @@
 }
 .resume-link{
     font-size: 30px;
+    margin: 10px 0px;;
     color: #202a44;
     text-align: center;
     position: relative;
@@ -58,6 +59,10 @@
 }
 .skill-type{
     font-size: 24px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     color: #202a44;
 }
 .skill-grid{
@@ -65,7 +70,7 @@
     flex-wrap: wrap;
     justify-content: start;
     width: 100%;
-    padding: 10px 50px;
+    padding: 10px 20px;
     box-sizing: border-box;
 }
 
@@ -73,7 +78,7 @@
     text-align: center;
     display: block;
     padding: 16px;
-    margin: 10px 10px;
+    margin: 5px 10px;
     font-size: 20px;
     background-color: #fff;
     border-radius: 30px;
@@ -84,7 +89,7 @@
 .skill::after{
     display: block;
     font-size: 16px;
-    padding: 10px;
+    padding: 0px 10px;
     color: --var(--smoky-black);
     position: relative;
 }
@@ -106,18 +111,18 @@
 }
 @media (max-width: 1600px) {
     .skill-grid{
-        padding: 10px 45px;
+        padding: 10px 15px;
     }
     
 }
 @media (max-width: 1400px) {
     .skill-grid{
-        padding: 10px 40px;
+        padding: 10px 12px;
     }
 }
 @media (max-width: 1200px) {
     .skill-grid{
-        padding: 10px 35px;
+        padding: 10px 10px;
     }
     .skill{
         padding: 11px;
@@ -126,12 +131,12 @@
 }
 @media (max-width: 1000px) {
     .skill-grid{
-        padding: 10px 32px;
+        padding: 10px 8px;
     }
 }
 @media (max-width: 850px) {
     .skill-grid{
-        padding: 10px 28px;
+        padding: 10px 5px;
     }
     .skill{
         padding: 10px;
@@ -140,16 +145,16 @@
 }
 @media (max-width: 700px) {
     .skill-grid{
-        padding: 10px 25px;
+        padding: 10px 0px;
     }
 }
 @media (max-width: 550px) {
     .skill-grid{
-        padding: 10px 22px;
+        padding: 10px 0px;
     }
 }
 @media (max-width: 400px) {
     .skill-grid{
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
 }
