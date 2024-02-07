@@ -30,44 +30,21 @@ a{
     color: var(--smoky-black);
     
 }
-#navbar-toggle{
-    position: fixed;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    width: 110px;
-    height: 80px;
-    padding: 10px 25px;
-    margin: 0px 10px;
-    cursor: pointer;
-    border-radius: 5%;
-    
-}
-.hamburger-line{
-    width: 90px;
-    aspect-ratio: 10/1;
-    border-radius: 40%;
-    background-color: var(--smoky-black);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 10px 0px;
-}
-#navbar-dropdown{
-    position: fixed;
-    display: none;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
-
-}
 
 
 .triangle {
-    border-left: 15px solid transparent; 
-    border-right: 15px solid transparent;
+    border-left: 30px solid #202a44; 
+    border-right: 0px solid transparent;
+    border-bottom: 15px solid transparent;
     /* border-top: 30px solid var(--atomic-tangerine); */
-    border-top: 30px solid #202a44;
+    border-top: 15px solid transparent;
+}
+.pointing-in > .triangle {
+    border-left: 0px solid transparent;
+    border-right: 30px solid #202a44; 
+    border-bottom: 15px solid transparent;
+    /* border-top: 30px solid var(--atomic-tangerine); */
+    border-top: 15px solid transparent;
 }
 #navbar{
     position: fixed;
@@ -77,11 +54,14 @@ a{
     width: 180px;
     height: 400px;
     padding: 10px 20px;
-    display: none;
+    display: flex;
     flex-direction: column;
     /*background-color: var(--atomic-tangerine);*/
     background-color: #202a44;
     box-sizing: border-box;
+}
+#navbar.invisible{
+    display: none;
 }
 .navbar-btn{
     text-align: center;
@@ -95,12 +75,24 @@ a{
     color: #202a44;
     cursor: pointer;
 }
-
+#navbar-dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 0px;
+    top: 100px;
+    width: 30px;
+    height: 360px;
+    padding: 20px 2px;
+    background-color: var(--spring-green);
+    z-index: 9999;
+}
 .slide-in{
-    animation: slideInLeft 1s forwards;
+    animation: slideIn 1s forwards;
 }
 .slide-out{
-    animation: slideOutLeft 1s forwards;
+    animation: slideOut 1s forwards;
 }
 .drop-down{
     animation: dropdown 1s forwards;
@@ -108,11 +100,16 @@ a{
 .drop-up{
     animation: dropup 1s forwards;
 }
-.spinning-up > .triangle{
+.spinning-in > .triangle{
     animation: rotatedown 0.3s forwards;
 }
-.spinning-down > .triangle{
+.spinning-out> .triangle{
     animation: rotateup 0.3s forwards;
+}
+#navbar-dropdown.navbar-visible{
+    position: fixed;
+    left: 180px;
+
 }
 #title{
     padding: 20px;
@@ -143,30 +140,24 @@ a{
 .linkedin.icon{
     color: #0072b1;
 }
-@keyframes slideOutLeft {
+@keyframes slideOut {
     from { transform: translateX(0%); }
     to { transform: translateX(-100%); }
 }
-@keyframes slideInLeft {
+@keyframes slideIn {
     from { transform: translateX(-100%); }
     to { transform: translateX(0%); }
 }
-@keyframes slideInTop {
-    from {transform: translateY(-100%) translateX(-50%); left: 50%;}
-    to {transform: translateY(0%) translateX(-50%); left: 50%;}
-}
-@keyframes slideOutTop {
-    from {transform: translateY(0%) translateX(-50%); left: 50%; }
-    to {transform: translateY(-100%) translateX(-50%); left: 50%;}
-}
+
 @keyframes dropdown {
-    from {transform: translateY(0px) translateX(-50%); left: 50%; }
-    to {transform: translateY(100px) translateX(-50%); left: 50%;}
+    from {left: 0px;}
+    to {left: 180px;}
 }
 @keyframes dropup{
-    from {transform: translateY(100px) translateX(-50%); left: 50%; }
-    to {transform: translateY(0px) translateX(-50%); left: 50%;}
+    from {left: 180px; }
+    to {left: 0px;}
 }
+
 @keyframes rotateup {
     from {transform: rotate(180deg);}
     to {transform: rotate(0deg);}
@@ -213,7 +204,24 @@ a{
 @media (max-width: 1600px) {
     .content-container{
         width: 1000px;
-    }   
+    }
+    #navbar{
+        width: 160px;
+    }
+    #navbar-dropdown.navbar-visible{
+        left: 160px;
+    }
+    @keyframes dropdown {
+        from {left: 0px;}
+        to {left: 160px;}
+    }
+    @keyframes dropup{
+        from {left: 160px; }
+        to {left: 0px;}
+    }
+    .navbar-btn{
+        font-size: 28px;
+    }
 }
 @media (max-width: 1400px) {
     .content-container{
@@ -231,13 +239,23 @@ a{
     }
     #navbar-dropdown{
         display: flex;
+        flex-direction: row;
         justify-content: center;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
         top: 0px;
         width: 710px;
         height: 30px;
         padding: 2px 20px;
         background-color: var(--spring-green);
+
         z-index: 9999;
+    }
+    #navbar-dropdown.navbar-visible{
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #navbar{
         top: 0px;
@@ -252,11 +270,33 @@ a{
         margin: 5px 65px;
         padding: 10px;
     }
-    .slide-in{
-        animation: slideInTop 1s forwards;
+    @keyframes slideIn {
+        from {transform: translateY(-100%) translateX(-50%); left: 50%;}
+        to {transform: translateY(0%) translateX(-50%); left: 50%;}
     }
-    .slide-out{
-        animation: slideOutTop 1s forwards;
+    @keyframes slideOut {
+        from {transform: translateY(0%) translateX(-50%); left: 50%; }
+        to {transform: translateY(-100%) translateX(-50%); left: 50%;}
+    }
+    @keyframes dropdown {
+        from {top: 0px; }
+        to {top: 100px;}
+    }
+    @keyframes dropup{
+        from {top: 100px; }
+        to {top: 0px;}
+    }
+    .triangle {
+        border-left: 15px solid transparent; 
+        border-right: 15px solid transparent;
+        border-bottom: 0px solid transparent;
+        border-top: 30px solid #202a44;
+    }
+    .pointing-in > .triangle {
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent; 
+        border-bottom: 30px solid #202a44;
+        border-top: 0px solid transparent;
     }
 }
 @media (max-width: 1000px) {
@@ -300,9 +340,9 @@ a{
         height: 100px;
     }
     .navbar-btn{
-        font-size: 25px;
-        margin: 5px 55px;
-        padding: 10px;
+        font-size: 28px;
+        margin: 5px 45px;
+        padding: 12px;
     }
     .link{
         width: 90px;
@@ -315,25 +355,37 @@ a{
 @media (max-width: 700px) {
     .content-container{
         width: 500px;
+        padding-top: 120px;
     }
     #navbar-dropdown{
         width: 470px;
         padding: 2px 15px;
     }
-    
     #navbar{
         width: 500px;
-        height: 100px;
+        height: 90px;
+    }
+    #navbar-dropdown.navbar-visible{
+        top: 90px;
+    }
+    @keyframes dropdown {
+        from {top: 0px; }
+        to {top: 90px;}
+    }
+    @keyframes dropup{
+        from {top: 90px; }
+        to {top: 0px;}
     }
     .navbar-btn{
-        font-size: 22px;
-        margin: 5px 33px;
+        font-size: 25px;
+        margin: 5px 25px;
         padding: 12px;
     }
 }
 @media (max-width: 550px) {
     .content-container{
         width: 380px;
+        padding-top: 115px;
     }
     #navbar-dropdown{
         width: 352px;
@@ -344,11 +396,22 @@ a{
     } */
     #navbar{
         width: 380px;
-        height: 100px;
+        height: 80px;
+    }
+    #navbar-dropdown.navbar-visible{
+        top: 80px;
+    }
+    @keyframes dropdown {
+        from {top: 0px; }
+        to {top: 80px;}
+    }
+    @keyframes dropup{
+        from {top: 80px; }
+        to {top: 0px;}
     }
     .navbar-btn{
-        font-size: 20px;
-        margin: 5px 18px;
+        font-size: 22px;
+        margin: 5px 10px;
         padding: 10px;
     }
     .link{
@@ -362,6 +425,7 @@ a{
 @media (max-width: 400px) {
     .content-container{
         width: 300px;
+        padding-top: 105px;
     }
     #navbar-dropdown{
         width: 276px;
@@ -370,13 +434,23 @@ a{
     
     #navbar{
         width: 300px;
-        height: 100px;
-    
+        height: 70px;
+    }
+    #navbar-dropdown.navbar-visible{
+        top: 70px;
+    }
+    @keyframes dropdown {
+        from {top: 0px; }
+        to {top: 70px;}
+    }
+    @keyframes dropup{
+        from {top: 70px; }
+        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 18px;
         margin: 5px 7px;
-        padding: 10px;
+        padding: 8px;
     }
     .link{
         width: 80px;
