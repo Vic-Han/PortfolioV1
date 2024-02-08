@@ -116,27 +116,27 @@ a{
 }
 
 #title{
-    padding: 20px;
+    padding: 50px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 48px;
+    font-size: 180px;
 }
 #social-links{
     display: flex;
     justify-content: center;
 }
 .link{
-    width: 100px;
-    margin: 10px 30px;
+    width: 350px;
+    margin: 30px 90px;
 }
 .icon{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 50px;
+    font-size: 160px;
 }
 .github.icon{
     color: #222222;
@@ -175,6 +175,17 @@ a{
         width: 2400px;
     
     }
+    #title{
+        padding: 45px;
+        font-size: 148px;
+    }
+    .link{
+        width: 250px;
+        margin: 25px 75px;
+    }
+    .icon{
+        font-size: 130px;
+    }
 }
 @media (max-width: 3500px) {
     :root{
@@ -191,6 +202,17 @@ a{
         padding: 15px;
         border-radius: 10px;
     }
+    #title{
+        padding: 40px;
+        font-size: 120px;
+    }
+    .link{
+        width: 220px;
+        margin: 22px 65px;
+    }
+    .icon{
+        font-size: 115px;
+    }
 }
 @media (max-width: 3000px) {
     :root{
@@ -200,6 +222,17 @@ a{
     .content-container{
         width: 1900px;
     
+    }
+    #title{
+        padding: 30px;
+        font-size: 100px;
+    }
+    .link{
+        width: 190px;
+        margin: 20px 60px;
+    }
+    .icon{
+        font-size: 95px;
     }
 }
 @media (max-width: 2600px) {
@@ -218,6 +251,17 @@ a{
         border-radius: 10px;
     
     }
+    #title{
+        padding: 25px;
+        font-size: 85px;
+    }
+    .link{
+        width: 170px;
+        margin: 15px 50px;
+    }
+    .icon{
+        font-size: 80px;
+    }
 }
 @media (max-width: 2200px) {
     :root{
@@ -233,6 +277,17 @@ a{
         padding: 15px;
         border-radius: 10px;
     
+    }
+    #title{
+        padding: 25px;
+        font-size: 65px;
+    }
+    .link{
+        width: 140px;
+        margin: 15px 45px;
+    }
+    .icon{
+        font-size: 60px;
     }
 }
 
@@ -250,7 +305,17 @@ a{
         padding: 10px;
         border-radius: 5px;
     }
-    
+    #title{
+        padding: 20px;
+        font-size: 55px;
+    }
+    .link{
+        width: 120px;
+        margin: 12px 35px;
+    }
+    .icon{
+        font-size: 50px;
+    }
 }
 @media (max-width: 1600px) {
     :root{
@@ -260,7 +325,18 @@ a{
     .content-container{
         width: 1000px;
     }
-   
+ 
+    #title{
+        padding: 20px;
+        font-size: 48px;
+    }
+    .link{
+        width: 100px;
+        margin: 10px 30px;
+    }
+    .icon{
+        font-size: 50px;
+    }
     .navbar-btn{
         font-size: 28px;
     }
