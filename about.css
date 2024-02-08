@@ -7,54 +7,116 @@
     display: none;
 }
 .main-summary{
-    margin: 15px 0px;
+    margin: 55px 0px;
     display: grid;
-    grid-template-columns: 300px 800px;
+    grid-template-columns: 900px 2000px;
 }
 .main-img,.secondary-img{
-    width: 300px;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 75px;
 }
 .main-desc,.secondary-desc{
-    padding: 0px 30px;
-    font-size: 24px;
-    line-height: 2;
+    padding: 0px 70px;
+    font-size: 60px;
+    line-height: 2.3;
 }
 .secondary-summary{
-    margin: 15px 0px;
+    margin: 55px 0px;
     display: grid;
-    grid-template-columns: 800px 300px;
+    grid-template-columns: 2000px 900px;
 }
 
 .more-text{
     border-top: solid 3px var(--smoky-black);
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 36px;
+    font-size: 80px;
 }
 .running-summary, .cooking-summary{
     display: grid;
-    grid-template-columns: 200px 900px;
-    margin: 20px 0px;
+    grid-template-columns: 500px 2400px;
+    margin: 40px 0px;
 }
 .cycling-summary{
     display: grid;
-    grid-template-columns: 900px 200px;
-    margin: 20px 0px;
+    grid-template-columns: 2400px 500px;
+    margin: 40px 0px;
 }
 .desc-img{
-    width: 200px;
+    width: 500px;
     aspect-ratio: 1/1;
-    border-radius: 20px;
+    border-radius: 60px;
+}
+.img-desc{
+    font-size: 40px;
+    padding: 10px;
+    line-height: 1.6;
+
 }
 .desc-text{
-    font-size: 20px;
+    font-size: 50px;
     padding: 20px;
-    line-height: 1.4;
+    line-height: 1.6;
+}
+@media (max-width: 4000px) {
+  
+}
+@media (max-width: 3500px) {
+
+}
+@media (max-width: 3000px) {
+
+}
+@media (max-width: 2600px) {
+    
+}
+@media (max-width: 2200px) {
+    
 }
 
+@media (max-width: 1900px) {
+   
+    .main-summary{
+        margin: 15px 0px;
+        grid-template-columns: 300px 800px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 15px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 30px;
+        font-size: 24px;
+        line-height: 2;
+    }
+    .secondary-summary{
+        margin: 15px 0px;
+        grid-template-columns: 800px 300px;
+    }
+    
+    .more-text{
+        padding: 20px;
+        font-size: 36px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 200px 900px;
+        margin: 20px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 900px 200px;
+        margin: 20px 0px;
+    }
+    .desc-img{
+        width: 200px;
+        border-radius: 20px;
+    }
+    .desc-text{
+        font-size: 20px;
+        padding: 20px;
+        line-height: 1.4;
+    }
+}
 @media (max-width: 1600px) {
     .main-summary{
      
@@ -63,9 +125,7 @@
     .secondary-summary{
         grid-template-columns: 625px 275px;
     }
-    .main-img,.secondary-img{
-        width: 275px;
-    }
+ 
     .main-desc,.secondary-desc{
         padding: 0px 30px;
         font-size: 22px;
@@ -118,9 +178,7 @@
         font-size: 19px;
         line-height: 1.8;
     }
-    .main-img,.secondary-img{
-        width: 260px;
-    }
+
     .running-summary, .cooking-summary{
         grid-template-columns: 190px 460px;
     }
@@ -143,9 +201,7 @@
     .secondary-summary{
         grid-template-columns: 450px 250px;
     }
-    .main-img,.secondary-img{
-        width: 250px;
-    }
+  
     .main-desc,.secondary-desc{
         padding: 0px 25px;
         font-size: 18px;
@@ -184,6 +240,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        width: 250px;
     }
     .main-desc, .secondary-desc{
         padding: 20px 15px;
