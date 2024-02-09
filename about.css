@@ -101,9 +101,9 @@
     
     }
     .desc-text{
-        font-size: 34px;
-        padding: 15px;
-        line-height: 1.4;
+        font-size: 45px;
+        padding: 20px;
+        line-height: 1.6;
     }
 }
 @media (max-width: 3500px) {
@@ -147,9 +147,9 @@
     
     }
     .desc-text{
-        font-size: 20px;
+        font-size: 40px;
         padding: 20px;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 }
 @media (max-width: 3000px) {
@@ -193,9 +193,9 @@
     
     }
     .desc-text{
-        font-size: 20px;
+        font-size: 36px;
         padding: 20px;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 }
 @media (max-width: 2600px) {
@@ -239,9 +239,9 @@
     
     }
     .desc-text{
-        font-size: 20px;
+        font-size: 32px;
         padding: 20px;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 }
 @media (max-width: 2200px) {
@@ -285,9 +285,9 @@
     
     }
     .desc-text{
-        font-size: 20px;
+        font-size: 26px;
         padding: 20px;
-        line-height: 1.4;
+        line-height: 1.5;
     }
 }
 
@@ -325,6 +325,12 @@
     .desc-img{
         width: 200px;
         border-radius: 20px;
+    }
+    .img-desc{
+        font-size: 18px;
+        padding: 10px;
+        line-height: 1.0;
+    
     }
     .desc-text{
         font-size: 20px;
@@ -403,6 +409,11 @@
     }
     .desc-img{
         width: 190px;
+    }
+    .img-desc  {
+        font-size: 16px;
+        padding: 5px;
+        line-height: 1.2;
     }
     .desc-text{
         font-size: 18px;
