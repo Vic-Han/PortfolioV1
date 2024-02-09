@@ -386,6 +386,7 @@ a{
         height: var(--navbar-thickness);
         transform: translateX(-50%);
         flex-direction: row;
+        box-sizing: border-box;
     }
     .navbar-btn{
         font-size: 30px;
@@ -402,10 +403,10 @@ a{
     }
     @keyframes dropdown {
         from {top: 0px; }
-        to {top: 100px;}
+        to {top: var(--navbar-thickness);}
     }
     @keyframes dropup{
-        from {top: 100px; }
+        from {top: var(--navbar-thickness); }
         to {top: 0px;}
     }
     .triangle {
@@ -422,16 +423,12 @@ a{
     }
 }
 @media (max-width: 1000px) {
+    :root{
+        --navbar-thickness : 100px;
+        --navbar-length : 700px;
+    }
     .content-container{
         width: 700px;
-    }
-    #navbar-dropdown{
-        width: 660px;
-        padding: 2px 20px;
-    }
-    #navbar{
-        width: 700px;
-        height: 100px;
     }
     .navbar-btn{
         font-size: 30px;
@@ -447,19 +444,12 @@ a{
 }
 
 @media (max-width: 850px) {
+    :root{
+        --navbar-thickness : 100px;
+        --navbar-length : 650px;
+    }
     .content-container{
         width: 655px;
-    }
-    #navbar-dropdown{
-        width: 619px;
-        padding: 2px 18px;
-    }
-    /* #navbar-dropdown :first-child{
-        display: none;
-    } */
-    #navbar{
-        width: 655px;
-        height: 100px;
     }
     .navbar-btn{
         font-size: 28px;
@@ -475,28 +465,13 @@ a{
     }
 }
 @media (max-width: 700px) {
+    :root{
+        --navbar-thickness : 90px;
+        --navbar-length : 500px;
+    }
     .content-container{
         width: 500px;
         padding-top: 120px;
-    }
-    #navbar-dropdown{
-        width: 470px;
-        padding: 2px 15px;
-    }
-    #navbar{
-        width: 500px;
-        height: 90px;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: 90px;
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: 90px;}
-    }
-    @keyframes dropup{
-        from {top: 90px; }
-        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 25px;
@@ -505,31 +480,13 @@ a{
     }
 }
 @media (max-width: 550px) {
+    :root{
+        --navbar-thickness : 80px;
+        --navbar-length : 380px;
+    }
     .content-container{
         width: 380px;
         padding-top: 115px;
-    }
-    #navbar-dropdown{
-        width: 352px;
-        padding: 2px 14px;
-    }
-    /* #navbar-dropdown :last-child{
-        display: none;
-    } */
-    #navbar{
-        width: 380px;
-        height: 80px;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: 80px;
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: 80px;}
-    }
-    @keyframes dropup{
-        from {top: 80px; }
-        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 22px;
@@ -545,29 +502,13 @@ a{
     }
 }
 @media (max-width: 400px) {
+    :root{
+        --navbar-thickness : 70px;
+        --navbar-length : 300px;
+    }
     .content-container{
         width: 300px;
         padding-top: 105px;
-    }
-    #navbar-dropdown{
-        width: 276px;
-        padding: 2px 12px;
-    }
-    
-    #navbar{
-        width: 300px;
-        height: 70px;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: 70px;
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: 70px;}
-    }
-    @keyframes dropup{
-        from {top: 70px; }
-        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 18px;
