@@ -6,6 +6,17 @@
 #resume-section.invisible{
     display: none;
 }
+#resume-section > .invisible{
+    display: none;
+}
+.skills-section > .invisible{
+    display: none;
+}
+.resume-header-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
 .resume-text{
     margin: 10px 0px;
     font-size: 36px;

@@ -11,9 +11,10 @@ resume.classList.add('invisible')
 navBar.classList.add('invisible')
 
 
+
 let navbarVisible = false
 let navbarToggleActive = true
-
+let navbarButtonActive = true
 function toggleNavbar(){
     if(navbarToggleActive === false){
         return
@@ -59,17 +60,39 @@ function toggleNavbar(){
     }
 }
 function toggleAbout(){
+    if(!navbarButtonActive){
+       return 
+    }
+    navbarButtonActive = false
     about.classList.remove('invisible')
     projects.classList.add('invisible')
     resume.classList.add('invisible')
+    animateAbout().then(() =>{
+        navbarButtonActive = true
+    })
 }
 function toggleResume(){
+    if(!navbarButtonActive){
+        return 
+     }
+    navbarButtonActive = false
     about.classList.add('invisible')
     projects.classList.add('invisible')
     resume.classList.remove('invisible')
+    animateResume().then(() =>{
+        navbarButtonActive = true
+    })
 }
 function toggleProjects(){
+    if(!navbarButtonActive){
+        return 
+     }
+    navbarButtonActive = false
     about.classList.add('invisible')
     projects.classList.remove('invisible')
     resume.classList.add('invisible')
+    animateProjects().then(() =>{
+        navbarButtonActive = true
+    })
 }
+toggleAbout()

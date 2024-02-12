@@ -6,6 +6,9 @@
 #about-section.invisible{
     display: none;
 }
+#about-section > .invisible{
+    display: none;
+}
 .main-summary{
     margin: 15px 0px;
     display: grid;

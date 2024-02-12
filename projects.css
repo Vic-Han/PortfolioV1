@@ -8,6 +8,9 @@
 #project-section.invisible{
     display: none;
 }
+#project-section > .invisible{
+    display: none;
+}
 .project-header{
     margin: 30px 0px;
     width: 100%;
