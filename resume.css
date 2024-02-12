@@ -18,21 +18,21 @@
     flex-direction: column;
 }
 .resume-text{
-    margin: 10px 0px;
-    font-size: 36px;
-    width: 400px;
+    margin: 50px 0px;
+    font-size: 120px;
+    width: 1400px;
     text-align: center;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 .resume-link{
-    font-size: 30px;
-    margin: 10px 0px;;
+    font-size: 90px;
+    margin: 40px 0px;
     color: #202a44;
     text-align: center;
     position: relative;
-    width: 300px;
+    width: 1100px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -40,36 +40,29 @@
 .resume-link:hover{
     text-decoration: underline;
 }
-.education-section{
-    padding: 0px;
-}
 .education-header{
-    font-size: 36px;
-    margin: 10px 0px;
+    font-size: 90px;
+    margin: 30px 0px;
 }
-.university-section{
-    font-size: 24px;
-    padding: 10px 20px;
-}
-.IBM-certificate-section{
-    font-size: 24px;
-    padding: 10px 20px;
+.university-section, .IBM-certificate-section{
+    font-size: 60px;
+    padding: 30px 60px;
 }
 .skill-section{
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     box-sizing: border-box;
 }
 .skill-header{
-    font-size: 36px;   
+    font-size: 90px;   
     color: var(--smoky-black);
-    margin: 30px 0px;
+    margin: 80px 0px;
 }
 .skill-subsection{
-    margin: 10px 0px;
+    margin: 30px 0px;
 }
 .skill-type{
-    font-size: 24px;
+    font-size: 60px;
     text-align: center;
     position: relative;
     left: 50%;
@@ -88,19 +81,19 @@
 .skill{
     text-align: center;
     display: block;
-    padding: 16px;
-    margin: 5px 10px;
-    font-size: 20px;
+    padding: 48px;
+    margin: 15px 30px;
+    font-size: 55px;
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 70px;
     color: var(--smoky-black);
     box-sizing: border-box;
     line-height: 2;
 }
 .skill::after{
     display: block;
-    font-size: 16px;
-    padding: 0px 10px;
+    font-size: 40px;
+    padding: 0px 25px;
     color: --var(--smoky-black);
     position: relative;
 }
@@ -120,25 +113,385 @@
 .tech-logo{
     width: 100px;
 }
+@media (max-width: 4000px) {
+    .resume-text{
+        margin: 30px 0px;
+        font-size: 100px;
+        width: 1200px;
+    }
+    .resume-link{
+        font-size: 80px;
+        margin: 30px 0px;
+        width: 900px;
+    }
+    .education-header{
+        font-size: 90px;
+        margin: 30px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 70px;
+        padding: 20px 40px;
+    }
+    .skill-section{
+        padding: 40px;
+    }
+    .skill-header{
+        font-size: 90px;   
+        margin: 60px 0px;
+    }
+    .skill-subsection{
+        margin: 25px 0px;
+    }
+    .skill-type{
+        font-size: 50px;
+    }
+    .skill-grid{
+        padding: 20px 40px;
+    }
+    
+    .skill{
+        padding: 40px;
+        margin: 12px 25px;
+        font-size: 45px;
+        border-radius: 50px;
+    }
+    .skill::after{
+        font-size: 30px;
+        padding: 0px 25px;
+    }
+}
+@media (max-width: 3500px) {
+    .resume-text{
+        margin: 25px 0px;
+        font-size: 80px;
+        width: 1000px;
+    }
+    .resume-link{
+        font-size: 65px;
+        margin: 25px 0px;
+        width: 800px;
+    }
+    .education-header{
+        font-size: 75px;
+        margin: 25px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 60px;
+        padding: 15px 30px;
+    }
+    .skill-section{
+        padding: 30px;
+    }
+    .skill-header{
+        font-size: 45px;   
+        margin: 30px 0px;
+    }
+    .skill-subsection{
+        margin: 20px 0px;
+    }
+    .skill-type{
+        font-size: 40px;
+    }
+    .skill-grid{
+        padding: 20px 40px;
+    }
+    
+    .skill{
+        padding: 30px;
+        margin: 10px 20px;
+        font-size: 35px;
+        border-radius: 40px;
+    }
+    .skill::after{
+        font-size: 25px;
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 3000px){
+    .resume-text{
+        margin: 20px 0px;
+        font-size: 65px;
+        width: 800px;
+    }
+    .resume-link{
+        font-size: 50px;
+        margin: 20px 0px;
+        width: 600px;
+    }
+    .education-header{
+        font-size: 60px;
+        margin: 20px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 45px;
+        padding: 12px 25px;
+    }
+    .skill-section{
+        padding: 25px;
+    }
+    .skill-header{
+        font-size: 35px;   
+        margin: 20px 0px;
+    }
+    .skill-subsection{
+        margin: 15px 0px;
+    }
+    .skill-type{
+        font-size: 32px;
+    }
+    .skill-grid{
+        padding: 15px 30px;
+    }
+    
+    .skill{
+        padding: 25px;
+        margin: 8px 15px;
+        font-size: 30px;
+        border-radius: 30px;
+    }
+    .skill::after{
+        font-size: 20px;
+        padding: 0px 12px;
+    }
+}
+@media (max-width: 2600px){
+    .resume-text{
+        margin: 15px 0px;
+        font-size: 55px;
+        width: 800px;
+    }
+    .resume-link{
+        font-size: 40px;
+        margin: 15px 0px;
+        width: 600px;
+    }
+    .education-header{
+        font-size: 50px;
+        margin: 15px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 35px;
+        padding: 10px 20px;
+    }
+    .skill-section{
+        padding: 20px;
+    }
+    .skill-header{
+        font-size: 28px;   
+        margin: 15px 0px;
+    }
+    .skill-subsection{
+        margin: 12px 0px;
+    }
+    .skill-type{
+        font-size: 25px;
+    }
+    .skill-grid{
+        padding: 12px 25px;
+    }
+    
+    .skill{
+        padding: 20px;
+        margin: 6px 12px;
+        font-size: 28px;
+        border-radius: 30px;
+    }
+    .skill::after{
+        font-size: 18px;
+        padding: 0px 10px;
+    }
+}
+
+
+@media (max-width: 2200px){
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 50px;
+        width: 700px;
+    }
+    .resume-link{
+        font-size: 35px;
+        margin: 10px 0px;
+        width: 500px;
+    }
+    .education-header{
+        font-size: 45px;
+        margin: 10px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 30px;
+        padding: 8px 15px;
+    }
+    .skill-section{
+        padding: 15px;
+    }
+    .skill-header{
+        font-size: 25px;   
+        margin: 10px 0px;
+    }
+    .skill-subsection{
+        margin: 8px 0px;
+    }
+    .skill-type{
+        font-size: 22px;
+    }
+    .skill-grid{
+        padding: 10px 20px;
+    }
+    .skill{
+        padding: 15px;
+        margin: 5px 10px;
+        font-size: 25px;
+        border-radius: 25px;
+    }
+    .skill::after{
+        font-size: 15px;
+        padding: 0px 8px;
+    }
+    
+}
+@media (max-width: 1900px) {
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 40px;
+        width: 700px;
+    }
+    .resume-link{
+        font-size: 30px;
+        margin: 10px 0px;
+        width: 500px;
+    }
+    .education-header{
+        font-size: 38px;
+        margin: 10px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 24px;
+        padding: 5px 10px;
+    }
+    .skill-section{
+        padding: 10px;
+    }
+    .skill-header{
+        font-size: 22px;   
+        margin: 10px 0px;
+    }
+    .skill-subsection{
+        margin: 5px 0px;
+    }
+    .skill-type{
+        font-size: 20px;
+    }
+    .skill-grid{
+        padding: 10px 20px;
+    }
+    .skill{
+        padding: 10px;
+        margin: 5px 10px;
+        font-size: 22px;
+        border-radius: 25px;
+    }
+    .skill::after{
+        font-size: 12px;
+        padding: 0px 8px;
+    }
+}
 @media (max-width: 1600px) {
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 35px;
+        width: 600px;
+    }
+    .resume-link{
+        font-size: 25px;
+        margin: 10px 0px;
+        width: 400px;
+    }
+    .education-header{
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+    .skill-section{
+        padding: 10px;
+    }
+    .skill-header{
+        font-size: 20px;   
+        margin: 10px 0px;
+    }
+    .skill-subsection{
+        margin: 5px 0px;
+    }
+    .skill-type{
+        font-size: 18px;
+    }
     .skill-grid{
         padding: 10px 15px;
+    }
+    .skill{
+        padding: 10px;
+        margin: 5px 10px;
+        font-size: 20px;
+        border-radius: 25px;
+    }
+    .skill::after{
+        font-size: 10px;
+        padding: 0px 8px;
     }
     
 }
 @media (max-width: 1400px) {
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 30px;
+        width: 500px;
+    }
+    .resume-link{
+        font-size: 20px;
+        margin: 10px 0px;
+        width: 300px;
+    }
+    .education-header{
+        font-size: 25px;
+        margin: 10px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+    .skill-section{
+        padding: 10px;
+    }
+    .skill-header{
+        font-size: 18px;   
+        margin: 10px 0px;
+    }
+    .skill-subsection{
+        margin: 5px 0px;
+    }
+    .skill-type{
+        font-size: 16px;
+    }
     .skill-grid{
         padding: 10px 12px;
     }
+    .skill{
+        padding: 10px;
+        margin: 5px 10px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+    .skill::after{
+        font-size: 9px;
+        padding: 0px 8px;
+    }
+
 }
 @media (max-width: 1200px) {
-    .skill-grid{
-        padding: 10px 10px;
-    }
-    .skill{
-        padding: 11px;
-        font-size: 19px;
-    }
+    
 }
 @media (max-width: 1000px) {
     .skill-grid{
@@ -146,12 +499,34 @@
     }
 }
 @media (max-width: 850px) {
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 27px;
+        width: 500px;
+    }
+    .resume-link{
+        font-size: 19px;
+        margin: 10px 0px;
+        width: 300px;
+    }
+    .education-header{
+        font-size: 22px;
+        margin: 10px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 16px;
+        padding: 5px 10px;
+    }
     .skill-grid{
         padding: 10px 5px;
     }
     .skill{
         padding: 10px;
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .skill::after{
+        font-size: 8px;
+        padding: 0px 5px;
     }
 }
 @media (max-width: 700px) {
@@ -160,8 +535,49 @@
     }
 }
 @media (max-width: 550px) {
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 25px;
+        width: 500px;
+    }
+    .resume-link{
+        font-size: 18px;
+        margin: 10px 0px;
+        width: 300px;
+    }
+    .education-header{
+        font-size: 20px;
+        margin: 10px 0px;
+    }
+    .university-section, .IBM-certificate-section{
+        font-size: 15px;
+        padding: 5px 8px;
+    }
+    .skill-section{
+        padding: 10px;
+    }
+    .skill-header{
+        font-size: 14px;   
+        margin: 10px 0px;
+    }
+    .skill-subsection{
+        margin: 5px 0px;
+    }
+    .skill-type{
+        font-size: 14px;
+    }
     .skill-grid{
         padding: 10px 0px;
+    }
+    .skill{
+        padding: 10px;
+        margin: 4px 8px;
+        font-size: 14px;
+        border-radius: 20px;
+    }
+    .skill::after{
+        font-size: 7px;
+        padding: 0px 7px;
     }
 }
 @media (max-width: 400px) {

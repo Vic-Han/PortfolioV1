@@ -4,6 +4,8 @@
     --atomic-tangerine: #F79F79;
     --medium-slate-blue: #8A4FFF;
     --electric-blue: #65DEF1;
+    --navbar-thickness : 400px; /* how much in goes into the screen */
+    --navbar-length : 850px; /* size of other dimension */
 }
 html,body{
     padding: 0;
@@ -22,7 +24,7 @@ a{
     background-color: #fff4f0;
 }
 .content-container{
-    width: 1100px;
+    width: 3000px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -51,8 +53,8 @@ a{
     z-index: 2000;
     left: 0%;
     top: 100px;
-    width: 180px;
-    height: 400px;
+    width: var(--navbar-thickness);
+    height: var(--navbar-length);
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
@@ -65,10 +67,10 @@ a{
 }
 .navbar-btn{
     text-align: center;
-    font-size: 32px;
-    margin: 35px 0px;
-    padding: 10px;
-    border-radius: 5px;
+    font-size: 55px;
+    margin: 85px 10px;
+    padding: 30px 20px;
+    border-radius: 15px;
     /*background-color: var(--medium-slate-blue);*/
     background-color: #04F06A;
     /*color: var(--spring-green);*/
@@ -82,11 +84,17 @@ a{
     position: fixed;
     left: 0px;
     top: 100px;
-    width: 30px;
-    height: 360px;
+    width: 34px;
+    height: var(--navbar-length);
     padding: 20px 2px;
     background-color: var(--spring-green);
     z-index: 9999;
+    box-sizing: border-box;
+}
+#navbar-dropdown.navbar-visible{
+    position: fixed;
+    left: var(--navbar-thickness);
+
 }
 .slide-in{
     animation: slideIn 1s forwards;
@@ -106,33 +114,29 @@ a{
 .spinning-out> .triangle{
     animation: rotateup 0.3s forwards;
 }
-#navbar-dropdown.navbar-visible{
-    position: fixed;
-    left: 180px;
 
-}
 #title{
-    padding: 20px;
+    padding: 50px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 48px;
+    font-size: 180px;
 }
 #social-links{
     display: flex;
     justify-content: center;
 }
 .link{
-    width: 100px;
-    margin: 10px 30px;
+    width: 350px;
+    margin: 30px 90px;
 }
 .icon{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 50px;
+    font-size: 160px;
 }
 .github.icon{
     color: #222222;
@@ -151,10 +155,10 @@ a{
 
 @keyframes dropdown {
     from {left: 0px;}
-    to {left: 180px;}
+    to {left: var(--navbar-thickness);}
 }
 @keyframes dropup{
-    from {left: 180px; }
+    from {left: var(--navbar-thickness); }
     to {left: 0px;}
 }
 
@@ -166,23 +170,172 @@ a{
     from {transform: rotate(0deg);}
     to {transform: rotate(180deg);}
 }
+@media (max-width: 4000px) {
+    .content-container{
+        width: 2400px;
+    
+    }
+    #title{
+        padding: 45px;
+        font-size: 148px;
+    }
+    .link{
+        width: 250px;
+        margin: 25px 75px;
+    }
+    .icon{
+        font-size: 130px;
+    }
+}
+@media (max-width: 3500px) {
+    :root{
+        --navbar-thickness : 350px;
+        --navbar-length : 750px;
+    }
+    .content-container{
+        width: 2200px;
+    
+    }
+    .navbar-btn{
+        font-size: 55px;
+        margin: 75px 10px;
+        padding: 15px;
+        border-radius: 10px;
+    }
+    #title{
+        padding: 40px;
+        font-size: 120px;
+    }
+    .link{
+        width: 220px;
+        margin: 22px 65px;
+    }
+    .icon{
+        font-size: 115px;
+    }
+}
+@media (max-width: 3000px) {
+    :root{
+        --navbar-thickness : 320px;
+        --navbar-length : 700px;
+    }
+    .content-container{
+        width: 1900px;
+    
+    }
+    #title{
+        padding: 30px;
+        font-size: 100px;
+    }
+    .link{
+        width: 190px;
+        margin: 20px 60px;
+    }
+    .icon{
+        font-size: 95px;
+    }
+}
+@media (max-width: 2600px) {
+    :root{
+        --navbar-thickness : 220px;
+        --navbar-length : 560px;
+    }
+    .content-container{
+        width: 1650px;
+    
+    }
+    .navbar-btn{
+        font-size: 40px;
+        margin: 50px 5px;
+        padding: 15px;
+        border-radius: 10px;
+    
+    }
+    #title{
+        padding: 25px;
+        font-size: 85px;
+    }
+    .link{
+        width: 170px;
+        margin: 15px 50px;
+    }
+    .icon{
+        font-size: 80px;
+    }
+}
+@media (max-width: 2200px) {
+    :root{
+        --navbar-thickness : 200px;
+        --navbar-length : 450px;
+    }
+    .content-container{
+        width: 1400px;
+    }
+    .navbar-btn{
+        font-size: 34px;
+        margin: 40px 5px;
+        padding: 15px;
+        border-radius: 10px;
+    
+    }
+    #title{
+        padding: 25px;
+        font-size: 65px;
+    }
+    .link{
+        width: 140px;
+        margin: 15px 45px;
+    }
+    .icon{
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 1900px) {
+    :root{
+        --navbar-thickness : 160px;
+        --navbar-length : 400px;
+    }
+    .content-container{
+        width: 1300px;
+    }
+    .navbar-btn{
+        font-size: 32px;
+        margin: 35px 0px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    #title{
+        padding: 20px;
+        font-size: 55px;
+    }
+    .link{
+        width: 120px;
+        margin: 12px 35px;
+    }
+    .icon{
+        font-size: 50px;
+    }
+}
 @media (max-width: 1600px) {
+    :root{
+        --navbar-thickness : 160px;
+        --navbar-length : 350px;
+    }
     .content-container{
         width: 1000px;
     }
-    #navbar{
-        width: 160px;
+ 
+    #title{
+        padding: 20px;
+        font-size: 48px;
     }
-    #navbar-dropdown.navbar-visible{
-        left: 160px;
+    .link{
+        width: 100px;
+        margin: 10px 30px;
     }
-    @keyframes dropdown {
-        from {left: 0px;}
-        to {left: 160px;}
-    }
-    @keyframes dropup{
-        from {left: 160px; }
-        to {left: 0px;}
+    .icon{
+        font-size: 50px;
     }
     .navbar-btn{
         font-size: 28px;
@@ -194,6 +347,10 @@ a{
     }
 }
 @media (max-width: 1200px) {
+    :root{
+        --navbar-thickness : 100px;
+        --navbar-length : 750px;
+    }
     .content-container{
         padding-top: 130px;
         margin: 0;
@@ -210,25 +367,26 @@ a{
         left: 50%;
         transform: translateX(-50%);
         top: 0px;
-        width: 710px;
-        height: 30px;
+        width: var(--navbar-length);
+        height: 34px;
         padding: 2px 20px;
         background-color: var(--spring-green);
 
         z-index: 9999;
     }
     #navbar-dropdown.navbar-visible{
-        top: 100px;
+        top: var(--navbar-thickness);
         left: 50%;
         transform: translateX(-50%);
     }
     #navbar{
         top: 0px;
         left: 50%;
-        width: 750px;
-        height: 100px;
+        width: var(--navbar-length);
+        height: var(--navbar-thickness);
         transform: translateX(-50%);
         flex-direction: row;
+        box-sizing: border-box;
     }
     .navbar-btn{
         font-size: 30px;
@@ -245,10 +403,10 @@ a{
     }
     @keyframes dropdown {
         from {top: 0px; }
-        to {top: 100px;}
+        to {top: var(--navbar-thickness);}
     }
     @keyframes dropup{
-        from {top: 100px; }
+        from {top: var(--navbar-thickness); }
         to {top: 0px;}
     }
     .triangle {
@@ -265,16 +423,12 @@ a{
     }
 }
 @media (max-width: 1000px) {
+    :root{
+        --navbar-thickness : 100px;
+        --navbar-length : 700px;
+    }
     .content-container{
         width: 700px;
-    }
-    #navbar-dropdown{
-        width: 660px;
-        padding: 2px 20px;
-    }
-    #navbar{
-        width: 700px;
-        height: 100px;
     }
     .navbar-btn{
         font-size: 30px;
@@ -290,19 +444,12 @@ a{
 }
 
 @media (max-width: 850px) {
+    :root{
+        --navbar-thickness : 100px;
+        --navbar-length : 650px;
+    }
     .content-container{
         width: 655px;
-    }
-    #navbar-dropdown{
-        width: 619px;
-        padding: 2px 18px;
-    }
-    /* #navbar-dropdown :first-child{
-        display: none;
-    } */
-    #navbar{
-        width: 655px;
-        height: 100px;
     }
     .navbar-btn{
         font-size: 28px;
@@ -318,28 +465,13 @@ a{
     }
 }
 @media (max-width: 700px) {
+    :root{
+        --navbar-thickness : 90px;
+        --navbar-length : 500px;
+    }
     .content-container{
         width: 500px;
         padding-top: 120px;
-    }
-    #navbar-dropdown{
-        width: 470px;
-        padding: 2px 15px;
-    }
-    #navbar{
-        width: 500px;
-        height: 90px;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: 90px;
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: 90px;}
-    }
-    @keyframes dropup{
-        from {top: 90px; }
-        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 25px;
@@ -348,31 +480,13 @@ a{
     }
 }
 @media (max-width: 550px) {
+    :root{
+        --navbar-thickness : 80px;
+        --navbar-length : 380px;
+    }
     .content-container{
         width: 380px;
         padding-top: 115px;
-    }
-    #navbar-dropdown{
-        width: 352px;
-        padding: 2px 14px;
-    }
-    /* #navbar-dropdown :last-child{
-        display: none;
-    } */
-    #navbar{
-        width: 380px;
-        height: 80px;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: 80px;
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: 80px;}
-    }
-    @keyframes dropup{
-        from {top: 80px; }
-        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 22px;
@@ -388,29 +502,13 @@ a{
     }
 }
 @media (max-width: 400px) {
+    :root{
+        --navbar-thickness : 70px;
+        --navbar-length : 300px;
+    }
     .content-container{
         width: 300px;
         padding-top: 105px;
-    }
-    #navbar-dropdown{
-        width: 276px;
-        padding: 2px 12px;
-    }
-    
-    #navbar{
-        width: 300px;
-        height: 70px;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: 70px;
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: 70px;}
-    }
-    @keyframes dropup{
-        from {top: 70px; }
-        to {top: 0px;}
     }
     .navbar-btn{
         font-size: 18px;

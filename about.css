@@ -10,68 +10,350 @@
     display: none;
 }
 .main-summary{
-    margin: 15px 0px;
+    margin: 55px 0px;
     display: grid;
-    grid-template-columns: 300px 800px;
+    grid-template-columns: 900px 2050px;
 }
 .main-img,.secondary-img{
-    width: 300px;
-    border-radius: 15px;
+    width: 100%;
+    border-radius: 75px;
 }
 .main-desc,.secondary-desc{
-    padding: 0px 30px;
-    font-size: 24px;
-    line-height: 2;
+    padding: 0px 70px;
+    font-size: 65px;
+    line-height: 2.1;
 }
 .secondary-summary{
-    margin: 15px 0px;
+    margin: 55px 0px;
     display: grid;
-    grid-template-columns: 800px 300px;
+    grid-template-columns: 2050px 900px;
 }
 
 .more-text{
     border-top: solid 3px var(--smoky-black);
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 36px;
+    font-size: 80px;
 }
 .running-summary, .cooking-summary{
     display: grid;
-    grid-template-columns: 200px 900px;
-    margin: 20px 0px;
+    grid-template-columns: 500px 2400px;
+    margin: 40px 0px;
 }
 .cycling-summary{
     display: grid;
-    grid-template-columns: 900px 200px;
-    margin: 20px 0px;
+    grid-template-columns: 2400px 500px;
+    margin: 40px 0px;
 }
 .desc-img{
-    width: 200px;
+    width: 500px;
     aspect-ratio: 1/1;
-    border-radius: 20px;
+    border-radius: 60px;
+}
+.img-desc{
+    font-size: 45px;
+    padding: 10px;
+    line-height: 1.6;
+
 }
 .desc-text{
-    font-size: 20px;
-    padding: 20px;
-    line-height: 1.4;
+    font-size: 55px;
+    padding: 20px 40px;
+    line-height: 1.6;
+}
+@media (max-width: 4000px) {
+    .main-summary{
+        margin: 45px 0px;
+        grid-template-columns: 700px 1650px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 55px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 60px;
+        font-size: 52px;
+        line-height: 2.1;
+    }
+    .secondary-summary{
+        margin: 45px 0px;
+        grid-template-columns: 1650px 700px;
+    }
+    
+    .more-text{
+        padding: 40px;
+        font-size: 65px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 450px 1950px;
+        margin: 40px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 1950px 450px;
+        margin: 40px 0px;
+    }
+    .desc-img{
+        width: 450px;
+        border-radius: 40px;
+    }
+    .img-desc{
+        font-size: 40px;
+        padding: 10px;
+        line-height: 1.6;
+    
+    }
+    .desc-text{
+        font-size: 45px;
+        padding: 20px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 3500px) {
+    .main-summary{
+        margin: 45px 0px;
+        grid-template-columns: 650px 1500px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 50px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 50px;
+        font-size: 48px;
+        line-height: 2.0;
+    }
+    .secondary-summary{
+        margin: 45px 0px;
+        grid-template-columns: 1500px 650px;
+    }
+    
+    .more-text{
+        padding: 40px;
+        font-size: 65px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 400px 1800px;
+        margin: 20px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 1800px 400px;
+        margin: 20px 0px;
+    }
+    .desc-img{
+        width: 400px;
+        border-radius: 40px;
+    }
+    .img-desc{
+        font-size: 34px;
+        padding: 10px;
+        line-height: 1.6;
+    
+    }
+    .desc-text{
+        font-size: 40px;
+        padding: 20px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 3000px) {
+    .main-summary{
+        margin: 40px 0px;
+        grid-template-columns: 550px 1320px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 40px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 40px;
+        font-size: 40px;
+        line-height: 2.0;
+    }
+    .secondary-summary{
+        margin: 40px 0px;
+        grid-template-columns: 1320px 550px;
+    }
+    
+    .more-text{
+        padding: 40px;
+        font-size: 65px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 350px 1550px;
+        margin: 20px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 1550px 350px;
+        margin: 20px 0px;
+    }
+    .desc-img{
+        width: 350px;
+        border-radius: 30px;
+    }
+    .img-desc{
+        font-size: 31px;
+        padding: 10px;
+        line-height: 1.6;
+    
+    }
+    .desc-text{
+        font-size: 36px;
+        padding: 20px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 2600px) {
+    .main-summary{
+        margin: 30px 0px;
+        grid-template-columns: 450px 1170px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 30px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 60px;
+        font-size: 35px;
+        line-height: 2.1;
+    }
+    .secondary-summary{
+        margin: 30px 0px;
+        grid-template-columns: 1170px 450px;
+    }
+    
+    .more-text{
+        padding: 40px;
+        font-size: 65px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 300px 1350px;
+        margin: 20px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 1350px 300px;
+        margin: 20px 0px;
+    }
+    .desc-img{
+        width: 300px;
+        border-radius: 30px;
+    }
+    .img-desc{
+        font-size: 27px;
+        padding: 10px;
+        line-height: 1.6;
+    
+    }
+    .desc-text{
+        font-size: 32px;
+        padding: 20px;
+        line-height: 1.5;
+    }
+}
+@media (max-width: 2200px) {
+    .main-summary{
+        margin: 20px 0px;
+        grid-template-columns: 350px 1030px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 55px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 25px;
+        font-size: 29px;
+        line-height: 2.2;
+    }
+    .secondary-summary{
+        margin: 20px 0px;
+        grid-template-columns: 1030px 350px;
+    }
+    
+    .more-text{
+        padding: 40px;
+        font-size: 65px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 250px 1150px;
+        margin: 20px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 1150px 250px;
+        margin: 20px 0px;
+    }
+    .desc-img{
+        width: 250px;
+        border-radius: 20px;
+    }
+    .img-desc{
+        font-size: 21px;
+        padding: 10px;
+        line-height: 1.6;
+    
+    }
+    .desc-text{
+        font-size: 26px;
+        padding: 20px;
+        line-height: 1.5;
+    }
 }
 
+@media (max-width: 1900px) {
+   
+    .main-summary{
+        margin: 15px 0px;
+        grid-template-columns: 320px 950px;
+    }
+    .main-img,.secondary-img{
+        border-radius: 15px;
+    }
+    .main-desc,.secondary-desc{
+        padding: 0px 30px;
+        font-size: 26px;
+        line-height: 2.3;
+    }
+    .secondary-summary{
+        margin: 15px 0px;
+        grid-template-columns: 950px 320px;
+    }
+    
+    .more-text{
+        padding: 20px;
+        font-size: 36px;
+    }
+    .running-summary, .cooking-summary{
+        grid-template-columns: 200px 900px;
+        margin: 20px 0px;
+    }
+    .cycling-summary{
+        grid-template-columns: 900px 200px;
+        margin: 20px 0px;
+    }
+    .desc-img{
+        width: 200px;
+        border-radius: 20px;
+    }
+    .img-desc{
+        font-size: 18px;
+        padding: 10px;
+        line-height: 1.0;
+    
+    }
+    .desc-text{
+        font-size: 20px;
+        padding: 20px;
+        line-height: 1.4;
+    }
+}
 @media (max-width: 1600px) {
     .main-summary{
      
         grid-template-columns: 275px 725px;
     }
     .secondary-summary{
-        grid-template-columns: 625px 275px;
+        grid-template-columns: 725px 275px;
     }
-    .main-img,.secondary-img{
-        width: 275px;
-    }
+ 
     .main-desc,.secondary-desc{
         padding: 0px 30px;
         font-size: 22px;
+        line-height: 1.9;
     }
     .running-summary, .cooking-summary{
         grid-template-columns: 200px 700px;
@@ -121,9 +403,7 @@
         font-size: 19px;
         line-height: 1.8;
     }
-    .main-img,.secondary-img{
-        width: 260px;
-    }
+
     .running-summary, .cooking-summary{
         grid-template-columns: 190px 460px;
     }
@@ -132,6 +412,11 @@
     }
     .desc-img{
         width: 190px;
+    }
+    .img-desc  {
+        font-size: 16px;
+        padding: 5px;
+        line-height: 1.2;
     }
     .desc-text{
         font-size: 18px;
@@ -146,9 +431,7 @@
     .secondary-summary{
         grid-template-columns: 450px 250px;
     }
-    .main-img,.secondary-img{
-        width: 250px;
-    }
+  
     .main-desc,.secondary-desc{
         padding: 0px 25px;
         font-size: 18px;
@@ -187,6 +470,7 @@
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+        width: 250px;
     }
     .main-desc, .secondary-desc{
         padding: 20px 15px;
