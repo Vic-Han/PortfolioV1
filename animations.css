@@ -1,8 +1,8 @@
 :root{
     --start-opacity: 0.0;
     --animation-time: 1.3s;
-    --slide-distance-x: 80px;
-    --slide-distance-y: 80px;
+    --slide-distance-x: 140px;
+    --slide-distance-y: 120px;
 }
 @keyframes fadeInLeft {
     from {
@@ -55,4 +55,98 @@
 }
 .fade-in-down{
     animation: fadeInDown var(--animation-time) ease-in-out;
+}
+
+@media (max-width: 4000px) {
+    :root{
+        --slide-distance-x: 135px;
+        --slide-distance-y: 115px;
+    
+    }
+}
+@media (max-width: 3500px) {
+   :root{
+        --slide-distance-x: 130px;
+        --slide-distance-y: 110px;
+    
+   }
+}
+@media (max-width: 3000px){
+    :root{
+        --slide-distance-x: 120px;
+        --slide-distance-y: 100px;
+    
+    }
+}
+@media (max-width: 2600px){
+    :root{
+        --slide-distance-x: 110px;
+        --slide-distance-y: 90px;
+    
+    }
+}
+@media (max-width: 2200px){
+    :root{
+        --slide-distance-x: 105px;
+        --slide-distance-y: 85px;
+    
+    
+    }
+}
+@media (max-width: 1900px) {
+    :root{
+        --slide-distance-x: 95px;
+        --slide-distance-y: 80px;
+    
+    
+    }
+}
+@media (max-width: 1600px) {
+  :root{
+        --slide-distance-x: 80px;
+        --slide-distance-y: 70px;    
+  }
+}
+@media (max-width: 1400px) {
+    :root{
+        --slide-distance-x: 70px;
+        --slide-distance-y: 60px;    
+  }
+}
+@media (max-width: 1200px) {
+   :root{
+        --slide-distance-x: 60px;
+        --slide-distance-y: 50px;
+   }
+}
+@media (max-width: 1000px) {
+    :root{
+        --slide-distance-x: 55px;
+        --slide-distance-y: 40px;
+   }
+}
+
+@media (max-width: 850px) {
+   :root{
+        --slide-distance-x: 50px;
+        --slide-distance-y: 35px;
+   }
+}
+@media (max-width: 700px) {
+   :root{
+        --slide-distance-x: 45px;
+        --slide-distance-y: 30px;
+   }
+}
+@media (max-width: 550px) {
+    :root{
+        --slide-distance-x: 40px;
+        --slide-distance-y: 25px;
+    }
+}
+@media (max-width: 400px) {
+   :root{
+        --slide-distance-x: 35px;
+        --slide-distance-y: 20px;
+   }
 }

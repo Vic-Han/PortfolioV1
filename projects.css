@@ -283,6 +283,10 @@
     }
 }
 @media (max-width: 1200px) {
+    .project-header{
+        margin: 25px 0px;
+        font-size: 40px;
+    }
     .project-img{
         width: 640px;
         height: 400px;
@@ -302,6 +306,10 @@
    
 }
 @media (max-width: 700px) {
+    .project-header{
+        margin: 20px 0px;
+        font-size: 30px;
+    }
     .project-img{
         width: 520px;
         height: 325px;

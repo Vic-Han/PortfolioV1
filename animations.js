@@ -109,7 +109,7 @@ async function animateProjects(){
     const promises = []
     promises.push(slideDivUp(projectsChildren[0], 0))
     for(let i = 1; i < projectsChildren.length; i++){
-        promises.push(slideDivLeft(projectsChildren[i], animationGap * i * 1.2))
+        promises.push(slideDivLeft(projectsChildren[i], animationGap * i * 1.0))
     }
     await Promise.all(promises)
     return;
