@@ -28,15 +28,12 @@ function toggleNavbar(){
             navBar.classList.remove('slide-out')
             navbarDropdown.classList.remove('drop-up')
             navbarDropdown.classList.remove('navbar-visible')
-            navbarDropdown.classList.add("spinning-out")
-            setTimeout(() =>{
-                navbarDropdown.classList.remove("spinning-out")
-                navbarDropdown.classList.remove("pointing-in")
-            }, 310)
+            navbarDropdown.classList.remove("pointing-in")
+          
             navBar.classList.add('invisible')
             setTimeout(() =>{
                 navbarToggleActive = true
-            }, 350)
+            }, 150)
         }, 1000)
     }
     else if (navbarVisible === false){
@@ -48,14 +45,11 @@ function toggleNavbar(){
             navBar.classList.remove('slide-in')
             navbarDropdown.classList.remove('drop-down')
             navbarDropdown.classList.add("navbar-visible")
-            navbarDropdown.classList.add("spinning-in")
-            setTimeout(() =>{
-                navbarDropdown.classList.remove("spinning-in")
-                navbarDropdown.classList.add("pointing-in")
-            }, 310)
+            navbarDropdown.classList.add("pointing-in")
+           
             setTimeout(() =>{
                 navbarToggleActive = true
-            }, 350)
+            }, 150)
         }, 1000)
     }
 }

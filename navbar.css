@@ -1,0 +1,340 @@
+@import url('base.css');
+:root{
+    --navbar-height: 300px;
+}
+@keyframes slideOutNavbar {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-100%); }
+}
+@keyframes slideInNavbar {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+}
+
+@keyframes slideInToggle {
+    from {
+        left: 0px; 
+        transform: translateX(0);
+    }
+    to {
+        left: 100vw;
+        transform: translateX(-100%);
+    }
+}
+@keyframes slideOutToggle{
+    from {
+        left: 100vw;
+        transform: translateX(-100%);
+    }
+    to {
+        left: 0px; 
+        transform: translateX(0);
+    }
+}
+@keyframes topArrowRotateIn{
+    from {
+        left: 20%;
+        transform: rotate(-135deg);
+    }
+    to {
+        left: 0%;
+        transform: rotate(-45deg);
+    }
+}
+@keyframes bottomArrowRotateIn{
+    from {
+        left: 20%;
+        transform: rotate(135deg);
+    }
+    to {
+        left: 0%;
+        transform: rotate(45deg);
+    }
+}
+@keyframes topArrowRotateOut{
+    from{
+        left: 0%;
+        transform: rotate(-45deg);
+    }
+    to{
+        left: 20%;
+        transform: rotate(-135deg);
+    }
+    
+}
+@keyframes bottomArrowRotateOut{
+    from{
+        left: 0%;
+        transform: rotate(45deg);
+    }
+    to{
+        left: 20%;
+        transform: rotate(135deg);
+    }
+    
+}
+#navbar{
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: var(--navbar-height);
+    padding: 0px 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /*background-color: var(--atomic-tangerine);*/
+    background-color: var(--sky-blue);
+    box-sizing: border-box;
+}
+#navbar.invisible{
+    display: none;
+}
+.navbar-btn{
+    text-align: center;
+    font-size: 85px;
+    margin: 55px 10px;
+    padding: 45px 100px;
+    border-radius: 25px;
+    background-color: #ffffff;
+    color: var(--smoky-black);
+    cursor: pointer;
+}
+#navbar-dropdown{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: var(--navbar-height);
+    height: var(--navbar-height);
+    padding: 20px;
+    background-color: var(--sky-blue);
+    z-index: 9999;
+    box-sizing: border-box;
+}
+#navbar-dropdown.navbar-visible{
+    position: fixed;
+    left: 100vw;
+    transform: translateX(-100%);
+
+}
+
+.arrow-line{
+    width: 70%;
+    aspect-ratio: 7/1;
+    background-color: var(--smoky-black);
+    position: absolute;
+    border-radius: 15%;
+}
+.arrow-line.one{
+    left: 20%;
+    top: 22%;
+    transform: rotate(-135deg);
+}
+.arrow-line.two{
+    left: 20%;
+    top: 65%;
+    transform: rotate(135deg);
+}
+.pointing-in > .arrow-line.one{
+    left: 0%;
+    transform: rotate(-45deg);
+}
+.pointing-in > .arrow-line.two{
+    left: 0%;
+    transform: rotate(45deg);
+}
+.drop-down > .arrow-line.one{
+    animation: topArrowRotateIn 1s forwards;
+}
+.drop-up> .arrow-line.one{
+    animation: topArrowRotateOut 1s forwards;
+}
+.drop-down > .arrow-line.two{
+    animation: bottomArrowRotateIn 1s forwards;
+}
+.drop-up > .arrow-line.two{
+    animation: bottomArrowRotateOut 1s forwards;
+}
+.slide-in{
+    animation: slideInNavbar 1s forwards;
+}
+.slide-out{
+    animation: slideOutNavbar 1s forwards;
+}
+.drop-down{
+    animation: slideInToggle 1s forwards;
+}
+.drop-up{
+    animation: slideOutToggle 1s forwards;
+}
+
+@media (max-width: 4000px) {
+    :root{
+        --navbar-height : 275px;
+    }
+    .navbar-btn{
+        font-size: 70px;
+        margin: 55px 10px;
+        padding: 35px 90px;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 3500px) {
+    :root{
+       --navbar-height : 250px;
+    }
+    .navbar-btn{
+        font-size: 60px;
+        margin: 50px 10px;
+        padding: 35px 90px;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 3000px) {
+    :root{
+        --navbar-height : 230px;
+     }
+     .navbar-btn{
+         font-size: 55px;
+         margin: 45px 10px;
+         padding: 30px 80px;
+         border-radius: 20px;
+     }
+   
+}
+@media (max-width: 2600px) {
+    :root{
+        --navbar-height : 210px;
+     }
+     .navbar-btn{
+         font-size: 50px;
+         margin: 40px 10px;
+         padding: 28px 75px;
+         border-radius: 20px;
+     }
+   
+}
+@media (max-width: 2200px) {
+    :root{
+        --navbar-height : 180px;
+     }
+     .navbar-btn{
+         font-size: 45px;
+         margin: 35px 10px;
+         padding: 25px 70px;
+         border-radius: 20px;
+     }
+    
+}
+
+@media (max-width: 1900px) {
+    :root{
+        --navbar-height : 160px;
+     }
+     .navbar-btn{
+         font-size: 40px;
+         margin: 30px 10px;
+         padding: 25px 60px;
+         border-radius: 20px;
+     }
+   
+}
+@media (max-width: 1600px) {
+    :root{
+        --navbar-height : 140px;
+     }
+     .navbar-btn{
+         font-size: 32px;
+         margin: 25px 10px;
+         padding: 25px 50px;
+         border-radius: 20px;
+     }
+}
+@media (max-width: 1400px) {
+    :root{
+        --navbar-height : 125px;
+     }
+     .navbar-btn{
+         font-size: 28px;
+         margin: 22px 10px;
+         padding: 22px 40px;
+         border-radius: 20px;
+     }
+}
+@media (max-width: 1200px) {
+    :root{
+        --navbar-height : 115px;
+     }
+     .navbar-btn{
+         font-size: 26px;
+         margin: 20px 0px;
+         padding: 20px 35px;
+         border-radius: 20px;
+     }
+}
+@media (max-width: 1000px) {
+    :root{
+        --navbar-height : 105px;
+     }
+     .navbar-btn{
+         font-size: 24px;
+         margin: 18px 0px;
+         padding: 18px 30px;
+         border-radius: 16px;
+     }
+}
+
+@media (max-width: 850px) {
+    :root{
+        --navbar-height : 95px;
+     }
+     .navbar-btn{
+         font-size: 22px;
+         margin: 16px 0px;
+         padding: 16px 28px;
+         border-radius: 15px;
+     }
+    
+}
+@media (max-width: 700px) {
+    :root{
+        --navbar-height : 80px;
+     }
+     .navbar-btn{
+         font-size: 18px;
+         margin: 15px 0px;
+         padding: 15px 15px;
+         border-radius: 15px;
+     }
+     #navbar{
+          padding: 0px 17%;  
+     }
+}
+@media (max-width: 550px) {
+    :root{
+        --navbar-height : 60px;
+     }
+     .navbar-btn{
+         font-size: 16px;
+         margin: 10px 0px;
+         padding: 10px 12px;
+         border-radius: 12px;
+     }
+}
+@media (max-width: 400px) {
+    :root{
+        --navbar-height : 45px;
+     }
+     .navbar-btn{
+         font-size: 14px;
+         margin: 8px 0px;
+         padding: 8px 10px;
+         border-radius: 10px;
+     }
+
+}

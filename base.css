@@ -4,8 +4,8 @@
     --atomic-tangerine: #F79F79;
     --medium-slate-blue: #8A4FFF;
     --electric-blue: #65DEF1;
-    --navbar-thickness : 400px; /* how much in goes into the screen */
-    --navbar-length : 850px; /* size of other dimension */
+    --sky-blue : #3c80f0;
+  
 }
 html,body{
     padding: 0;
@@ -34,86 +34,7 @@ a{
 }
 
 
-.triangle {
-    border-left: 30px solid #202a44; 
-    border-right: 0px solid transparent;
-    border-bottom: 15px solid transparent;
-    /* border-top: 30px solid var(--atomic-tangerine); */
-    border-top: 15px solid transparent;
-}
-.pointing-in > .triangle {
-    border-left: 0px solid transparent;
-    border-right: 30px solid #202a44; 
-    border-bottom: 15px solid transparent;
-    /* border-top: 30px solid var(--atomic-tangerine); */
-    border-top: 15px solid transparent;
-}
-#navbar{
-    position: fixed;
-    z-index: 2000;
-    left: 0%;
-    top: 100px;
-    width: var(--navbar-thickness);
-    height: var(--navbar-length);
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    /*background-color: var(--atomic-tangerine);*/
-    background-color: #202a44;
-    box-sizing: border-box;
-}
-#navbar.invisible{
-    display: none;
-}
-.navbar-btn{
-    text-align: center;
-    font-size: 55px;
-    margin: 85px 10px;
-    padding: 30px 20px;
-    border-radius: 15px;
-    /*background-color: var(--medium-slate-blue);*/
-    background-color: #04F06A;
-    /*color: var(--spring-green);*/
-    color: #202a44;
-    cursor: pointer;
-}
-#navbar-dropdown{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    left: 0px;
-    top: 100px;
-    width: 34px;
-    height: var(--navbar-length);
-    padding: 20px 2px;
-    background-color: var(--spring-green);
-    z-index: 9999;
-    box-sizing: border-box;
-}
-#navbar-dropdown.navbar-visible{
-    position: fixed;
-    left: var(--navbar-thickness);
 
-}
-.slide-in{
-    animation: slideIn 1s forwards;
-}
-.slide-out{
-    animation: slideOut 1s forwards;
-}
-.drop-down{
-    animation: dropdown 1s forwards;
-}
-.drop-up{
-    animation: dropup 1s forwards;
-}
-.spinning-in > .triangle{
-    animation: rotatedown 0.3s forwards;
-}
-.spinning-out> .triangle{
-    animation: rotateup 0.3s forwards;
-}
 
 #title{
     padding: 50px;
@@ -144,32 +65,7 @@ a{
 .linkedin.icon{
     color: #0072b1;
 }
-@keyframes slideOut {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-100%); }
-}
-@keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0%); }
-}
 
-@keyframes dropdown {
-    from {left: 0px;}
-    to {left: var(--navbar-thickness);}
-}
-@keyframes dropup{
-    from {left: var(--navbar-thickness); }
-    to {left: 0px;}
-}
-
-@keyframes rotateup {
-    from {transform: rotate(180deg);}
-    to {transform: rotate(0deg);}
-}
-@keyframes rotatedown {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(180deg);}
-}
 @media (max-width: 4000px) {
     .content-container{
         width: 2400px;
@@ -196,12 +92,7 @@ a{
         width: 2200px;
     
     }
-    .navbar-btn{
-        font-size: 55px;
-        margin: 75px 10px;
-        padding: 15px;
-        border-radius: 10px;
-    }
+    
     #title{
         padding: 40px;
         font-size: 120px;
@@ -244,13 +135,6 @@ a{
         width: 1650px;
     
     }
-    .navbar-btn{
-        font-size: 40px;
-        margin: 50px 5px;
-        padding: 15px;
-        border-radius: 10px;
-    
-    }
     #title{
         padding: 25px;
         font-size: 85px;
@@ -270,13 +154,6 @@ a{
     }
     .content-container{
         width: 1400px;
-    }
-    .navbar-btn{
-        font-size: 34px;
-        margin: 40px 5px;
-        padding: 15px;
-        border-radius: 10px;
-    
     }
     #title{
         padding: 25px;
@@ -298,12 +175,6 @@ a{
     }
     .content-container{
         width: 1300px;
-    }
-    .navbar-btn{
-        font-size: 28px;
-        margin: 35px 0px;
-        padding: 10px;
-        border-radius: 5px;
     }
     #title{
         padding: 20px;
@@ -337,9 +208,6 @@ a{
     .icon{
         font-size: 50px;
     }
-    .navbar-btn{
-        font-size: 28px;
-    }
 }
 @media (max-width: 1400px) {
     .content-container{
@@ -352,75 +220,9 @@ a{
         --navbar-length : 750px;
     }
     .content-container{
-        padding-top: 130px;
-        margin: 0;
         width: 750px;
     }
-    #navbar-toggle{
-        display: none;
-    }
-    #navbar-dropdown{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 0px;
-        width: var(--navbar-length);
-        height: 34px;
-        padding: 2px 20px;
-        background-color: var(--spring-green);
-
-        z-index: 9999;
-    }
-    #navbar-dropdown.navbar-visible{
-        top: var(--navbar-thickness);
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    #navbar{
-        top: 0px;
-        left: 50%;
-        width: var(--navbar-length);
-        height: var(--navbar-thickness);
-        transform: translateX(-50%);
-        flex-direction: row;
-        box-sizing: border-box;
-    }
-    .navbar-btn{
-        font-size: 30px;
-        margin: 5px 65px;
-        padding: 10px;
-    }
-    @keyframes slideIn {
-        from {transform: translateY(-100%) translateX(-50%); left: 50%;}
-        to {transform: translateY(0%) translateX(-50%); left: 50%;}
-    }
-    @keyframes slideOut {
-        from {transform: translateY(0%) translateX(-50%); left: 50%; }
-        to {transform: translateY(-100%) translateX(-50%); left: 50%;}
-    }
-    @keyframes dropdown {
-        from {top: 0px; }
-        to {top: var(--navbar-thickness);}
-    }
-    @keyframes dropup{
-        from {top: var(--navbar-thickness); }
-        to {top: 0px;}
-    }
-    .triangle {
-        border-left: 15px solid transparent; 
-        border-right: 15px solid transparent;
-        border-bottom: 0px solid transparent;
-        border-top: 30px solid #202a44;
-    }
-    .pointing-in > .triangle {
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent; 
-        border-bottom: 30px solid #202a44;
-        border-top: 0px solid transparent;
-    }
+  
 }
 @media (max-width: 1000px) {
     :root{
@@ -429,11 +231,6 @@ a{
     }
     .content-container{
         width: 700px;
-    }
-    .navbar-btn{
-        font-size: 30px;
-        margin: 5px 55px;
-        padding: 10px;
     }
     .link{
         margin: 10px 25px;
@@ -451,11 +248,6 @@ a{
     .content-container{
         width: 655px;
     }
-    .navbar-btn{
-        font-size: 28px;
-        margin: 5px 45px;
-        padding: 12px;
-    }
     .link{
         width: 90px;
         margin: 5px 20px;
@@ -471,12 +263,6 @@ a{
     }
     .content-container{
         width: 500px;
-        padding-top: 120px;
-    }
-    .navbar-btn{
-        font-size: 25px;
-        margin: 5px 25px;
-        padding: 12px;
     }
 }
 @media (max-width: 550px) {
@@ -486,12 +272,6 @@ a{
     }
     .content-container{
         width: 380px;
-        padding-top: 115px;
-    }
-    .navbar-btn{
-        font-size: 22px;
-        margin: 5px 10px;
-        padding: 10px;
     }
     .link{
         width: 85px;
@@ -508,12 +288,6 @@ a{
     }
     .content-container{
         width: 300px;
-        padding-top: 105px;
-    }
-    .navbar-btn{
-        font-size: 18px;
-        margin: 5px 7px;
-        padding: 8px;
     }
     .link{
         width: 80px;

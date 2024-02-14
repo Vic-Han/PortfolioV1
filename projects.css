@@ -53,8 +53,8 @@
     margin: 50px 140px;
     padding: 45px;
     border-radius: 50px;
-    background-color: #202a44;
-    color: #04F06A;
+    background-color: var(--sky-blue);
+    color: #FFFFFF;
     font-size: 80px;
     text-align: center;
 }
