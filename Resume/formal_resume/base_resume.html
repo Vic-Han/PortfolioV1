@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title> Resume </title>
     <link rel ="stylesheet" href = "resume.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,11 +17,26 @@
             <div class = "name-text"> Victor Han </div>
             <div class = "link-wrapper">
 
-                <a href = "https://github.com/Vic-Han" target = "_blank"class = "link github"> <img class = "logo-img git" src = "GitHub-Logo.png"> <span class = "link-text"> Vic-Han </span> </a>
-                <a href = "https://www.linkedin.com/in/victor-han-vh45/" target = "_blank"class = "link linkedin"> <img class = "logo-img" src = "LinkedIn-logo.png"> <span class = "link-text"> Victor Han</span> </a>
-                <a href = "mailto:victor.han72@gmail.com" target = "_blank" class = "link email"> <img class = "logo-img" src = "Gmail_icon.png"> <span class = "link-text"> victor.han72@gmail.com</span> </a>
-                <div class = "link phone link-text"> 4034093451 </div>
-                <a href = "https://vic-han.github.io/" target = "_blank" class = "link portfolio"> <span class = "link-text"> Portfolio: https://vic-han.github.io/ </span> </a>
+                <a href = "https://github.com/Vic-Han" target = "_blank"class = "link github"> 
+                    <i class="fa-brands fa-github icon github"></i> 
+                    <span class = "link-text"> Vic-Han </span> 
+                </a>
+                <a href = "https://www.linkedin.com/in/victor-han-vh45/" target = "_blank"class = "link linkedin"> 
+                    <i class="fa-brands fa-linkedin icon linkedin"></i> 
+                    <span class = "link-text"> Victor Han</span>
+                </a>
+                <a href = "mailto:victor.han72@gmail.com" target = "_blank" class = "link email"> 
+                    <i class="fa-regular fa-envelope icon mail"></i> 
+                    <span class = "link-text"> victor.han72@gmail.com</span> 
+                </a>
+                <div class = "link phone"> 
+                    <i class="fa-solid fa-phone icon phone"></i> 
+                    <div class = "link-text"> 4034093451</div> 
+                </div>
+                <a href = "https://vic-han.github.io/" target = "_blank" class = "link portfolio"> 
+                    <i class="fa-solid fa-address-card icon portfolio"></i> 
+                    <span class = "link-text"> https://vic-han.github.io </span> 
+                </a>
             </div>
         </div> 
         <div class = "education-section">
@@ -26,14 +44,14 @@
             <div class = "education-component"> 
                 <div class = "education-left-wrapper">
                     <div class = "education-institution"> University of Calgary </div>
-                    <div class = "education-degree"> Bachelors of Science in Computer Science </div>
+                    <div class = "education-name"> Bachelors of Science in Computer Science </div>
                 </div>
                 <div class = "education-date"> Expected - May 2024 </div>
             </div>
             <div class = "education-component"> 
                 <div class = "education-left-wrapper">
                     <div class = "education-institution"> Coursera & IBM </div>
-                    <div class = "education-degree"> IBM Full Stack Software Developer Certificate </div>
+                    <div class = "education-name"> IBM Full Stack Software Developer Certificate </div>
                 </div>
                 <div class = "education-date"> Feb 2024 </div>
             </div>
@@ -94,7 +112,7 @@
                 <div class = "project-title"> <strong>Twitter Bot Detection:</strong> <span> Pyspark/Python, Apache Spark </span> </div>
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Collaborated in a team of 4 to process Kaggle dataset for detecting Twitter automation</li>
-                    <li class = "project-description"> Implemented and optimized K-means clustering with 90%-95% accuracy</li>
+                    <li class = "project-description"> Implemented and optimized K-means clustering with ~90% accuracy</li>
                     <li class = "project-description"> Applied normalization techniques with non linear functions leading to 3-10 times better distribution </li>
                 </ul>
             </div>
@@ -143,16 +161,17 @@
             <div class = "work-experience-header"> Work Experience </div>
             <div class = "job-desc"> 
                 <div class = "job-overview">
-                    <div class = "job-company"> Canadian Food Inspection Agency </div> <div class = "job-title"> Meat Hygiene Inspector</div> <div class = "job-date"> 05/2022 - 08/2023</div>
+                    <div class = "job-company"> Canadian Food Inspection Agency </div> <div class = "job-title"> Meat Hygiene Inspector</div> <div class = "job-date"> May 2022 - Aug 2023</div>
                 </div>
                 <ul class = "job-responsibility-wrapper">
-                    <li class = "job-responsibility"> Marked cow carcasses and offal parts with defects based on government standards</li>
+                    <li class = "job-responsibility"> Marked cow carcasses and offal parts with defects based on severity</li>
+                    <li class = "job-responsibility"> Ensured meat slaughter plant upheld government standards </li>
                     <li class = "job-responsibility"> Worked in a team of 10 to make numerous quick and rational group descisions </li>
                 </ul>
             </div>
             <div class = "job-desc">
                 <div class = "job-overview">
-                    <div class = "job-company"> No Frills </div><div class = "job-title"> Front End Cashier</div> <div class = "job-date"> 08/2020 - 08/2021</div>
+                    <div class = "job-company"> No Frills </div><div class = "job-title"> Front End Cashier</div> <div class = "job-date"> Aug 2020 - Aug 2021</div>
                 </div>
                 <ul class = "job-responsibility-wrapper">
                     <li class = "job-responsibility"> Assisted customers at checkout and provided quality customer service </li>
