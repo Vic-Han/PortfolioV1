@@ -33,9 +33,6 @@ a{
     
 }
 
-
-
-
 #title{
     padding: 50px;
     position: relative;
@@ -84,10 +81,7 @@ a{
     }
 }
 @media (max-width: 3500px) {
-    :root{
-        --navbar-thickness : 350px;
-        --navbar-length : 750px;
-    }
+  
     .content-container{
         width: 2200px;
     
@@ -106,10 +100,7 @@ a{
     }
 }
 @media (max-width: 3000px) {
-    :root{
-        --navbar-thickness : 320px;
-        --navbar-length : 700px;
-    }
+   
     .content-container{
         width: 1900px;
     
@@ -127,10 +118,7 @@ a{
     }
 }
 @media (max-width: 2600px) {
-    :root{
-        --navbar-thickness : 220px;
-        --navbar-length : 560px;
-    }
+   
     .content-container{
         width: 1650px;
     
@@ -148,10 +136,7 @@ a{
     }
 }
 @media (max-width: 2200px) {
-    :root{
-        --navbar-thickness : 200px;
-        --navbar-length : 450px;
-    }
+   
     .content-container{
         width: 1400px;
     }
@@ -169,10 +154,7 @@ a{
 }
 
 @media (max-width: 1900px) {
-    :root{
-        --navbar-thickness : 160px;
-        --navbar-length : 400px;
-    }
+   
     .content-container{
         width: 1300px;
     }
@@ -189,10 +171,7 @@ a{
     }
 }
 @media (max-width: 1600px) {
-    :root{
-        --navbar-thickness : 160px;
-        --navbar-length : 350px;
-    }
+   
     .content-container{
         width: 1000px;
     }
@@ -215,20 +194,14 @@ a{
     }
 }
 @media (max-width: 1200px) {
-    :root{
-        --navbar-thickness : 100px;
-        --navbar-length : 750px;
-    }
+    
     .content-container{
         width: 750px;
     }
   
 }
 @media (max-width: 1000px) {
-    :root{
-        --navbar-thickness : 100px;
-        --navbar-length : 700px;
-    }
+    
     .content-container{
         width: 700px;
     }
@@ -241,10 +214,7 @@ a{
 }
 
 @media (max-width: 850px) {
-    :root{
-        --navbar-thickness : 100px;
-        --navbar-length : 650px;
-    }
+   
     .content-container{
         width: 655px;
     }
@@ -257,19 +227,13 @@ a{
     }
 }
 @media (max-width: 700px) {
-    :root{
-        --navbar-thickness : 90px;
-        --navbar-length : 500px;
-    }
+    
     .content-container{
         width: 500px;
     }
 }
 @media (max-width: 550px) {
-    :root{
-        --navbar-thickness : 80px;
-        --navbar-length : 380px;
-    }
+    
     .content-container{
         width: 380px;
     }
@@ -282,10 +246,6 @@ a{
     }
 }
 @media (max-width: 400px) {
-    :root{
-        --navbar-thickness : 70px;
-        --navbar-length : 300px;
-    }
     .content-container{
         width: 300px;
     }
