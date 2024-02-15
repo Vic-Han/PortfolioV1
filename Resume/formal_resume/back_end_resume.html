@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title> Resume </title>
-    <link rel ="stylesheet" href = "resume_doublepage.css">
+    <link rel ="stylesheet" href = "resume.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,53 +22,21 @@
             </div>
         </div> 
         <div class = "education-section">
-            <div class = "education-desc"> <strong class = "education-header"> Education</strong> University of Calgary, B.Sc. Computer Science <span class = "education-date"> 09/2020 - 05/2024 </span></div>
-            <div class = "course-header"> Applicable Courses: </div>
-            <ul class = "course-list"> 
-                <li class = "course">
-                    Software Architecture
-                </li>
-                <li class = "course">
-                    Distributed Systems
-                </li>
-                <li class = "course">
-                    Principles of Operating Systems
-                </li>
-                <li class = "course">
-                    Deep Learning for Computer Vision
-                </li>
-                <li class = "course">
-                    Web Based Systems
-                </li>
-                <li class = "course">
-                    Scalable Data Analytics
-                </li>
-                <li class = "course">
-                    Computer Networks
-                </li>
-                <li class = "course">
-                    Database Management Systems
-                </li>
-                <li class = "course">
-                    Design and Analysis of Algorithms
-                </li>
-                <!--
-                <li class = "course">
-                    Human Computer Interaction
-                </li>
-                <li class = "course">
-                    Programming Paradigms
-                </li> -->
-                <li class = "course">
-                    Compiler Construction
-                </li>
-                <li class = "course">
-                    Data Structures and Algorithms
-                </li>
-                <li class = "course">
-                    Artificial Intelligence
-                </li>
-            </ul>
+            <strong class = "education-header"> Education and Certificates </strong>
+            <div class = "education-component"> 
+                <div class = "education-left-wrapper">
+                    <div class = "education-institution"> University of Calgary </div>
+                    <div class = "education-degree"> Bachelors of Science in Computer Science </div>
+                </div>
+                <div class = "education-date"> Expected - May 2024 </div>
+            </div>
+            <div class = "education-component"> 
+                <div class = "education-left-wrapper">
+                    <div class = "education-institution"> Coursera & IBM </div>
+                    <div class = "education-degree"> IBM Full Stack Software Developer Certificate </div>
+                </div>
+                <div class = "education-date"> Feb 2024 </div>
+            </div>
 
         </div>
         
@@ -77,16 +45,17 @@
             <div class = "skill-header"> Skills </div>
             <div class = "skill-set languages"> 
                 <strong> Programming Languages: </strong>
-                <span> C/C++, JavaScript, HTML5, CSS3, Python, Go, Java, C# </span>
+                <span> C/C++, JavaScript, HTML, CSS, Python, Go, Java, C# </span>
             </div>
             <div class = "skill-set frameworks"> 
-            <strong> Frameworks, Libraries, and Databases: </strong> 
-            <span> React, Vue, Bootstrap, Tailwind CSS, MySQL, Express.js, MongoDB, PostgreSQL, CassandraDB, Express.js, Hadoop, Apache Spark, TensorFlow </span>
+            <strong> Frameworks and Libraries: </strong> 
+            <span> React.js, Vue.js, Bootstrap, Tailwind CSS, MySQL, Express.js, MongoDB, PostgreSQL, 
+                CassandraDB, Express.js, Hadoop, Apache Spark, TensorFlow, Django, Flask </span>
             </div>
-            <!--<div class = "skill-set other"> 
-                <strong> Other Technologies </strong>
-                <span> </span>
-            </div>-->
+            <div class = "skill-set other"> 
+                <strong> Other Technologies: </strong>
+                <span> Git/Github, Docker, Bash, WebAssembly</span>
+            </div>
             <div class = "skill-set soft"> 
                 <strong> Other Skills: </strong>
                 <span> Leadership, Work Ethic, Communication, Adaptability, Problem Solving </span>
@@ -95,23 +64,29 @@
         <div class = "project-section">
             <div class = "project-header"> Projects </div>
             <div class = "project">
-                <div class = "project-title"> <strong>SpaceBook:</strong> <span> Gin/Go, React, PostgreSQL, CassandraDB </span> </div>
+                <div class = "project-title"> <strong>SpaceBook:</strong> <span> Gin/Go, React.js, PostgreSQL, CassandraDB </span> </div>
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Led a team of 5 to create a space-themed Facebook mockup</li>
-                    <li class = "project-description"> Designed and implemented all multi-step protocols including cookie creation, real time chat, and multi image upload on posts</li>
-                    <li class = "project-description"> Designed, implemented, and optimized database for scalability</li>
-                    <li class = "project-description"> Implemented the toggling of 10+ screens and API calls using React</li>
-                    <li class = "project-description"> Created 25+ API routes using Go, PostgreSQL, and CassandraDB</li>
+                    <li class = "project-description"> Archictected all server side endpoints and logic and implemented majority of RESTful APIs using Go, CassandraDB, and PostgreSQL</li>
+                    <li class = "project-description"> Implemented screen toggling, client side rendering, and API calls using React.js</li>
                 </ul>
 
             </div>
             <div class = "project">
-                <div class = "project-title"> <strong>Recipe-Selector:</strong> <span> React, Express.js, MongoDB (In progress) </span> </div>
+                <div class = "project-title"> <strong>My UCalgary 2.0:</strong> <span> Vue.js, Tailwind CSS (In progress) </span> </div>
                 <ul class = "project-description-wrapper">
-                    <li class = "project-description"> Solo capstone project with working features such as creation and editing of accounts, ingredients, and recipes</li>
-                    <li class = "project-description"> Many in progress features such as recipe recommendation AI, author subscriptions, and advanced lookup</li>
-                    <li class = "project-description"> Styling 20+ responsive pages with 4 breakpoints using CSS</li>
-                    <li class = "project-description"> Created 30+ API routes with Express.js and MongoDB, more still in progress </li>
+                    <li class = "project-description"> Leading a team of 7 to improve the user experience of the Univeristy of Calgary student portal</li>
+                    <li class = "project-description"> Managing the front-end and user experience team </li>
+                    <li class = "project-description"> Integrated all components, working on user experience using Vue.js and Tailwind CSS</li>
+                </ul>
+
+            </div>
+            <div class = "project">
+                <div class = "project-title"> <strong>Recipe-Selector:</strong> <span> React.js, Express.js, MongoDB (In progress) </span> </div>
+                <ul class = "project-description-wrapper">
+                    <li class = "project-description"> Solo capstone project with several working features and several in progress</li>
+                    <li class = "project-description"> Iterating on user experience, medium fidelity prototypes, and current interface using React.js</li>
+                    <li class = "project-description"> Designed and implemented numerous RESTful API routes using Express.js and MongoDB, many more in progress </li>
                 </ul>
 
             </div>
@@ -119,31 +94,31 @@
                 <div class = "project-title"> <strong>Twitter Bot Detection:</strong> <span> Pyspark/Python, Apache Spark </span> </div>
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Collaborated in a team of 4 to process Kaggle dataset for detecting Twitter automation</li>
-                    <li class = "project-description"> Implemented and optimized K-means which led to model clustering bots with 80% accuracy</li>
-                    <li class = "project-description"> Applied normalization techniques with non linear functions leading to 3 times better distribution than the basic standard deviation method </li>
+                    <li class = "project-description"> Implemented and optimized K-means clustering with 90%-95% accuracy</li>
+                    <li class = "project-description"> Applied normalization techniques with non linear functions leading to 3-10 times better distribution </li>
                 </ul>
             </div>
             <div class = "project">
                 <div class = "project-title"> <strong>Self Checkout Station:</strong> <span> Jswing/Java </span> </div>
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Directed a team of 30 to develop a native app simulating a self-checkout station</li>
-                    <li class = "project-description"> Designed and implemented front-end MVC architecture to integrate 15+ screens</li>
-                    <li class = "project-description"> Responsible for the development of approximately 60% of the back-end logic </li>
+                    <li class = "project-description"> Designed and implemented front-end data flow to integrate many standalone components</li>
+                    <li class = "project-description"> Bridged all GUI and back-end logic using observer design pattern</li>
                 </ul>
             </div>
             <div class = "project">
-                <div class = "project-title"> <strong>Web Texas Holdem:</strong> <span> JavaScript </span> </div>
+                <div class = "project-title"> <strong>Texas Holdem Pass and Play:</strong> <span> JavaScript </span> </div>
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Independent project focused on developing a Texas Hold'em application</li>
                     <li class = "project-description"> Used Javascript to create all of the naunced game logic</li>
-                    <li class = "project-description"> Used CSS and JavaScript to add animations to the UI </li>
+                    <li class = "project-description"> Used CSS and JavaScript to animate some interactions</li>
                 </ul>
             </div>
             <div class = "project">
                 <div class = "project-title"> <strong>Fitness Tracker:</strong> <span> Vaadin/Java, MySQL</span> </div>
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Worked in a team of 3 to create a fully customizable fitness tracker web app</li>
-                    <li class = "project-description"> Implemented roughly 70% of SQL queries, including some multi query edge cases</li>
+                    <li class = "project-description"> Implemented roughly 70% of SQL queries, including all multi query edge cases</li>
                     <li class = "project-description"> Created roughly 35% of the UI components and their logic using Java </li>
                 </ul>
             </div>
@@ -152,7 +127,15 @@
                 <ul class = "project-description-wrapper">
                     <li class = "project-description"> Individual project aimed at creating a powerful zero sum game AI</li>
                     <li class = "project-description"> Used C++ to implement Monte Carlo Tree search capable of defeating most humans, compiled to WebAssembly</li>
-                    <li class = "project-description"> Created a Web Application Interface with JavaScript and Web Workers to run WebAssembly module </li>
+                    <li class = "project-description"> Created a web app interface with JavaScript and Web Workers to run WebAssembly module </li>
+                </ul>
+            </div>
+            <div class = "project">
+                <div class = "project-title"> <strong>Dealship Review:</strong> <span> Django, Bootstrap, Docker, Flask, Express.js</span> </div>
+                <ul class = "project-description-wrapper">
+                    <li class = "project-description"> Created microservices using Flask, Express.js, and an IBM cloudant database </li>
+                    <li class = "project-description"> Created dynamic pages using Django and Bootsrap</li>
+                    <li class = "project-description"> Containerized each service using Docker</li>
                 </ul>
             </div>
         </div>
@@ -163,9 +146,8 @@
                     <div class = "job-company"> Canadian Food Inspection Agency </div> <div class = "job-title"> Meat Hygiene Inspector</div> <div class = "job-date"> 05/2022 - 08/2023</div>
                 </div>
                 <ul class = "job-responsibility-wrapper">
-                    <li class = "job-responsibility">Verified cow slaughter plant followed federal government food safety standards</li>
-                    <li class = "job-responsibility">Performed incision, visual, and palpation inspection on beef heads and organs</li>
-                    <li class = "job-responsibility">Marked cow carcasses and offal parts with serious pathologies for veterinary inspection</li>
+                    <li class = "job-responsibility"> Marked cow carcasses and offal parts with defects based on government standards</li>
+                    <li class = "job-responsibility"> Worked in a team of 10 to make numerous quick and rational group descisions </li>
                 </ul>
             </div>
             <div class = "job-desc">
@@ -174,7 +156,7 @@
                 </div>
                 <ul class = "job-responsibility-wrapper">
                     <li class = "job-responsibility"> Assisted customers at checkout and provided quality customer service </li>
-                    <li class = "job-responsibility"> Stocked aisles during downtime </li>
+                    <li class = "job-responsibility"> Coordinated with other cashiers to ensure max throughput during high volume periods </li>
                 </ul>
             </div>
         </div>
