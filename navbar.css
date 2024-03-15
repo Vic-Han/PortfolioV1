@@ -4,10 +4,10 @@
 }
 @keyframes slideOutNavbar {
     from { transform: translateX(0%); }
-    to { transform: translateX(-95%); }
+    to { transform: translateX(-100%); }
 }
 @keyframes slideInNavbar {
-    from { transform: translateX(-95%); }
+    from { transform: translateX(-98%); }
     to { transform: translateX(0%); }
 }
 
@@ -57,7 +57,7 @@
         transform: rotate(-45deg);
     }
     to{
-        left: 20%;
+        left: 33%;
         transform: rotate(-135deg);
     }
     
@@ -68,7 +68,7 @@
         transform: rotate(45deg);
     }
     to{
-        left: 20%;
+        left: 33%;
         transform: rotate(135deg);
     }
     
@@ -149,28 +149,28 @@
     transform: rotate(45deg);
 }
 .drop-down > .arrow-line.one{
-    animation: topArrowRotateIn 1s forwards;
+    animation: topArrowRotateIn 0.85s forwards;
 }
 .drop-up> .arrow-line.one{
-    animation: topArrowRotateOut 1s forwards;
+    animation: topArrowRotateOut 0.85s forwards;
 }
 .drop-down > .arrow-line.two{
-    animation: bottomArrowRotateIn 1s forwards;
+    animation: bottomArrowRotateIn 0.85s forwards;
 }
 .drop-up > .arrow-line.two{
-    animation: bottomArrowRotateOut 1s forwards;
+    animation: bottomArrowRotateOut 0.85s forwards;
 }
 .slide-in{
-    animation: slideInNavbar 1s forwards;
+    animation: slideInNavbar 0.85s forwards;
 }
 .slide-out{
-    animation: slideOutNavbar 1s forwards;
+    animation: slideOutNavbar 0.85s forwards;
 }
 .drop-down{
-    animation: slideInToggle 0.95s forwards;
+    animation: slideInToggle 0.85s forwards;
 }
 .drop-up{
-    animation: slideOutToggle 0.95s forwards;
+    animation: slideOutToggle 0.85s forwards;
 }
 
 @media (max-width: 4000px) {

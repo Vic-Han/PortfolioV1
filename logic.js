@@ -34,7 +34,7 @@ function toggleNavbar(){
             setTimeout(() =>{
                 navbarToggleActive = true
             }, 150)
-        }, 1000)
+        }, 850)
     }
     else if (navbarVisible === false){
         navbarVisible = true
@@ -50,7 +50,7 @@ function toggleNavbar(){
             setTimeout(() =>{
                 navbarToggleActive = true
             }, 150)
-        }, 1000)
+        }, 850)
     }
 }
 function toggleAbout(){
