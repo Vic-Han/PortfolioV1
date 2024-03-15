@@ -538,7 +538,7 @@
     .resume-text{
         margin: 10px 0px;
         font-size: 25px;
-        width: 500px;
+        width: 400px;
     }
     .resume-link{
         font-size: 18px;
@@ -584,4 +584,15 @@
     .skill-grid{
         padding: 10px 0px;
     }
+    .resume-text{
+        margin: 10px 0px;
+        font-size: 20px;
+        width: 250px;
+    }
+    .resume-link{
+        font-size: 15px;
+        margin: 10px 0px;
+        width: 250px;
+    }
+
 }

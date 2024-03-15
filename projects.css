@@ -4,6 +4,7 @@
 #project-section{
     display: flex;
     flex-direction: column;
+    padding-bottom: 30px;
 }
 #project-section.invisible{
     display: none;
@@ -57,6 +58,9 @@
     color: #FFFFFF;
     font-size: 80px;
     text-align: center;
+}
+.minor-project-desc{
+    width: 60%;
 }
 @media (max-width: 4000px) {
     .project-header{
