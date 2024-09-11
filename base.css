@@ -257,3 +257,41 @@ a{
         font-size: 35px;
     }
 }
+
+#outdated{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.outdated-body{
+    width: 50%;
+    height: 50%;
+    background-color: #fff4f0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.outdated-text{
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+}
+.outdated-close{
+    width:50%;
+    background-color: var(--smoky-black);
+    font-size: 2.4em;
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -89,4 +89,8 @@ function toggleProjects(){
         navbarButtonActive = true
     })
 }
-toggleAbout()
+function closeOutdated(){
+    document.getElementById("outdated").style.display = "none"
+    toggleAbout()
+
+}
